@@ -200,14 +200,14 @@
       "Commercial"
     ],
     "status": "Approved",
-    "latitude": 37.9378,
-    "longitude": -107.8451,
+    "latitude": 37.937553,
+    "longitude": -107.845228,
     "geometryType": "point",
-    "squareFootage": null,
+    "squareFootage": 394738,
     "housingUnits": 10,
-    "hotelRooms": 52,
-    "hotelResidences": 43,
-    "privateResidences": 26,
+    "hotelRooms": 53,
+    "hotelResidences": 77,
+    "privateResidences": 29,
     "estimatedEmployees": 350,
     "constructionWorkersPeak": 400,
     "publicDebtSubsidy": 2500000,
@@ -221,7 +221,7 @@
     "projectCost": 1000000000,
     "constructionLoan": 417500000,
     "keyQuestion": "The Four Seasons is housing hundreds of construction workers in Naturita, Ridgway, and the West End \u2014 communities that say they 'already operate at full capacity.' Who pays when the burdens fall down-valley but the benefits flow inward to Mountain Village?",
-    "whyItMatters": "The $1 billion Four Seasons broke ground October 2025 and is under active construction \u2014 36 months, finishing ~2028. It has 52 hotel rooms, 43 hotel residences, 26 private residences (priced $4M\u2013$35M at $5,500/sq ft), and only 10 employee apartments for an operation that will require hundreds of permanent staff. Construction is already forcing workers into Naturita (42-room Rimrock Hotel, purchased by developer), Camp V, and Ridgway \u2014 where the Town of Ridgway filed a lawsuit in March 2026 against the MTN Lodge for housing workers in a commercially-zoned hotel. Norwood Mayor Candy Meehan called it 'saturation at an unprecedented level.' A coalition of West End leaders sent a letter in July 2025 demanding a 'community benefit agreement,' saying the resort's benefits 'flow inward' while the burdens fall on communities 'who anticipate few, if any, long-term benefits.' The developer made a $2.5M contribution toward Telluride affordable housing \u2014 a fraction of the $580M in financing.",
+    "whyItMatters": "The $1 billion Four Seasons broke ground in October 2025 and is under active construction \u2014 36 months, finishing ~2028. The approved program includes 53 hotel rooms, 38 hotel residences (sold as lock-off lodge units), 29 private condominiums, and just 10 employee apartment studios in 3,000 SF of onsite workforce housing. No total staff headcount was published in the SPUD application; the document references '24/7 Front Desk Staff' and valet services but nowhere estimates the FTE count for a full 5-star operation at this scale. For context, a comparable Four Seasons property typically runs 1\u20132 staff per key \u2014 suggesting 50\u2013100+ permanent employees for the hotel rooms alone, with far more across F&B, spa, housekeeping, and residences. The 10 on-site studios are plainly insufficient. Construction has already pushed workers into Naturita (developer purchased the 42-room Rimrock Hotel), Camp V, and Ridgway, where the Town of Ridgway filed suit in March 2026 against MTN Lodge for housing workers in a commercially-zoned hotel. Norwood Mayor Candy Meehan called it 'saturation at an unprecedented level.' The developer's community benefit package included $2.2M to the Mountain Village housing fund \u2014 a notable contribution, though a fraction of the reported $580M+ in project financing.",
     "deepDiveUrl": "",
     "primarySourceUrl": "https://coloradosun.com/2026/04/07/housing-four-seasons-mountain-village/",
     "secondarySourceUrl": "https://press.fourseasons.com/news-releases/2025/new-four-seasons-in-telluride/",
@@ -230,7 +230,17 @@
     "editorialStatus": "Ready",
     "estimatedTotalCost": 1000000000,
     "estimatedCostPerUnit": 19231000,
-    "costNote": "Confirmed \u2014 $1B announced project cost per developer/media; $417.5M construction loan. 52 hotel rooms / $19,231,000 per room."
+    "costNote": "Confirmed \u2014 $1B announced project cost per developer/media; $417.5M construction loan. 52 hotel rooms / $19,231,000 per room.",
+    "parkingSpaces": 168,
+    "keyIssues": [
+      "53 hotel rooms + 38 hotel residences (77 lodge units) + 29 private condos",
+      "Only 10 employee apartment studios (3,000 SF) for a 5-star operation \u2014 no staff count published",
+      "394,738 SF conditioned space; 506,493 SF combined with parking/mechanical",
+      "Max height 89.8 ft (hotel) / 78.2 ft (residences) \u2014 both exceed typical MV heights",
+      "$2.2M contribution to Mountain Village housing fund (community benefit)",
+      "168 parking spaces (23 in excess of code requirement); 75% EV-capable",
+      "Construction workers housed in Naturita, Ridgway, and West End communities"
+    ]
   },
   {
     "id": "six-senses-mountain-village",
