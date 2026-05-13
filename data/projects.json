@@ -564,9 +564,9 @@
       "constructionStart": null,
       "completionExpected": null
     },
-    "estimatedTotalCost": 90000000,
-    "estimatedCostPerUnit": 1500000,
-    "costNote": "No official cost estimate released (as of May 2026). Structured parking at this scale (~900 spaces) typically runs $40\u201360M; housing + commercial component estimated ~$30\u201350M. No funding plan has been identified.",
+    "estimatedTotalCost": 100000000,
+    "estimatedCostPerUnit": 800000,
+    "costNote": "No official estimate released (May 2026). Housing est. based on comparable Telluride deed-restricted projects ($700K\u2013$900K/unit). Parking est. based on structured garage comps in mountain resort towns ($45K\u2013$65K/space); below-grade portions will run higher. No public funding plan identified.",
     "deedRestricted": true,
     "deedRestrictedPercent": 100,
     "applicant": "Design Workshop (on behalf of Town of Telluride)",
@@ -595,6 +595,7 @@
         "url": "https://engagetelluride.org/shandoka-lot-redevelopment-project",
         "time": "5:30 pm"
       }
-    ]
+    ],
+    "estimatedCostPerParkingSpace": 55000
   }
 ]
