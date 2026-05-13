@@ -432,10 +432,10 @@ function openDrawer(project) {
   // Fly to location and show 3D massing for this project
   map.easeTo({
     center:   [project.longitude, project.latitude],
-    zoom:     14.5,
+    zoom:     16,
     pitch:    58,
     bearing:  -22,
-    duration: 1100,
+    duration: 1200,
   });
   if (massingLoaded) {
     map.setLayoutProperty('proposed-massing-layer', 'visibility', 'visible');
