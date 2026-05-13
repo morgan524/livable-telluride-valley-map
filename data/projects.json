@@ -13,8 +13,8 @@
       "Land Use"
     ],
     "status": "Under Review",
-    "latitude": 37.945,
-    "longitude": -107.882,
+    "latitude": 37.949516,
+    "longitude": -107.874471,
     "geometryType": "point",
     "squareFootage": 400000,
     "housingUnits": 121,
@@ -324,8 +324,8 @@
       "Medical"
     ],
     "status": "Proposed",
-    "latitude": 37.9498,
-    "longitude": -107.87,
+    "latitude": 37.949516,
+    "longitude": -107.874471,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": null,
