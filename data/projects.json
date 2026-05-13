@@ -319,42 +319,6 @@
     "costNote": null
   },
   {
-    "id": "hospital-district-society-turn",
-    "name": "Hospital District / Medical Facility \u2014 Society Turn Context",
-    "shortName": "Hospital District",
-    "location": "Society Turn / Lawson Hill area",
-    "communityArea": "East End",
-    "jurisdiction": "Telluride Hospital District",
-    "projectType": [
-      "Civic Facility",
-      "Medical"
-    ],
-    "status": "Proposed",
-    "latitude": 37.949516,
-    "longitude": -107.874471,
-    "geometryType": "point",
-    "squareFootage": null,
-    "housingUnits": null,
-    "hotelRooms": null,
-    "estimatedEmployees": null,
-    "publicDebtSubsidy": null,
-    "waterUtilityIssue": "Unknown",
-    "trafficIssue": "High",
-    "decisionBody": "Telluride Hospital District Board / BOCC",
-    "nextMeetingDate": null,
-    "publicCommentDeadline": null,
-    "keyQuestion": "How does the proposed hospital district footprint at Society Turn interact with the broader PUD review, and is co-location with a 125-room hotel and 400,000 sq ft commercial campus appropriate?",
-    "whyItMatters": "A medical facility proposed in the Society Turn area is part of the broader context for the Society Turn PUD review. The combination of medical, hotel, and commercial uses at this corridor raises questions about cumulative impacts and community priorities for scarce highway-adjacent land.",
-    "deepDiveUrl": "https://livabletelluride.org/societyturnpud/",
-    "primarySourceUrl": "",
-    "lastUpdated": "2026-05-13",
-    "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review",
-    "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null,
-    "costNote": null
-  },
-  {
     "id": "carhenge-lot",
     "name": "Carhenge Lot Redevelopment",
     "shortName": "Carhenge",
@@ -669,5 +633,40 @@
         "url": "https://engagetelluride.org/diamond-ridge"
       }
     ]
+  },
+  {
+    "id": "society-turn-medical-center",
+    "name": "Society Turn \u2014 Medical Center",
+    "shortName": "ST Medical Center",
+    "location": "Lawson Hill / Society Turn, Hwy 145",
+    "communityArea": "East End",
+    "jurisdiction": "San Miguel County",
+    "projectType": [
+      "Medical"
+    ],
+    "status": "Approved",
+    "latitude": 37.949516,
+    "longitude": -107.874471,
+    "geometryType": "point",
+    "squareFootage": 40000,
+    "housingUnits": null,
+    "hotelRooms": null,
+    "estimatedEmployees": null,
+    "publicDebtSubsidy": null,
+    "waterUtilityIssue": "High",
+    "trafficIssue": "Medium",
+    "decisionBody": "BOCC",
+    "nextMeetingDate": null,
+    "publicCommentDeadline": null,
+    "keyQuestion": "The Society Turn PUD reserves a 40,000 sq ft medical campus site \u2014 when will construction drawings be submitted, and who will operate the facility?",
+    "whyItMatters": "The PUD for Society Turn was approved with a 40,000 sq ft regional medical center as a centerpiece of the program. As of 2026, no construction drawings have been submitted. The site is entitled but unbuilt \u2014 raising questions about whether the medical facility was a condition of approval or an aspirational use. San Miguel County has long lacked adequate local medical infrastructure, making the timeline and operator commitment significant public interest questions.",
+    "deepDiveUrl": "https://livabletelluride.org/societyturnpud/",
+    "primarySourceUrl": "",
+    "lastUpdated": "2026-05-13",
+    "sourceConfidence": "Confirmed",
+    "editorialStatus": "Ready",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null,
+    "costNote": "PUD approved; no construction drawings submitted"
   }
 ]
