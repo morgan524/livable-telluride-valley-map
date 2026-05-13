@@ -629,5 +629,70 @@
       }
     ],
     "estimatedCostPerParkingSpace": 55000
+  },
+  {
+    "id": "diamond-ridge",
+    "name": "Diamond Ranch \u2014 Community Housing (Diamond Ridge)",
+    "shortName": "Diamond Ranch",
+    "location": "West Telluride \u2014 Last Dollar Rd turnoff, Hwy 145",
+    "communityArea": "Telluride / San Miguel County",
+    "jurisdiction": "Town of Telluride / San Miguel County (joint)",
+    "projectType": [
+      "Housing"
+    ],
+    "status": "Stalled \u2014 Litigation",
+    "latitude": 37.959749,
+    "longitude": -107.904589,
+    "geometryType": "point",
+    "squareFootage": null,
+    "housingUnits": 250,
+    "hotelRooms": null,
+    "parkingSpaces": null,
+    "description": "39-acre parcel jointly purchased by the Town of Telluride and San Miguel County in 2021 for $7.21M (50/50 ARPA + reserves) to develop up to 250 single-family and duplex Community Housing (CH-zoned) units. Located near the Last Dollar Rd turnoff from Hwy 145, approximately 2 miles west of downtown Telluride. At least 50% of homes must be priced at or below 120% AMI. No apartments. A $5M DOLA grant awarded in 2022 was reallocated in November 2023 due to litigation-caused delays. The project remains stalled pending resolution of the rezoning challenge.",
+    "keyIssues": [
+      "250 single-family and duplex homes on ~20 buildable acres of a 39-acre parcel",
+      "At least 50% priced at or below 120% AMI; no apartments",
+      "Joint public ownership: Town of Telluride (50%) + San Miguel County (50%)",
+      "June 2022 BOCC rezoning to Community Housing (CH) challenged by Deep Creek landowners",
+      "December 2022 District Court reversed BOCC rezoning \u2014 commissioner recusal issue + master plan inconsistency",
+      "$5M DOLA affordable housing grant reallocated November 2023 due to litigation delay",
+      "Project stalled pending reconsidering or new rezoning approval"
+    ],
+    "timeline": {
+      "applicationFiled": "2021",
+      "approvalExpected": null,
+      "constructionStart": null,
+      "completionExpected": null
+    },
+    "estimatedTotalCost": 7210000,
+    "estimatedCostPerUnit": null,
+    "costNote": "Land acquisition: $7.21M (50% Town of Telluride ARPA funds + 50% County reserves). Infrastructure and construction costs not yet determined. $5M DOLA grant (awarded 2022) was reallocated in Nov 2023 due to litigation delay \u2014 this grant has been lost.",
+    "deedRestricted": true,
+    "deedRestrictedPercent": 50,
+    "applicant": "Town of Telluride / San Miguel County",
+    "owner": "Town of Telluride / San Miguel County (joint)",
+    "deepDiveUrl": "https://livabletelluride.org/",
+    "primarySourceUrl": "https://engagetelluride.org/diamond-ridge",
+    "lastUpdated": "2026-05-13",
+    "tags": [
+      "community-housing",
+      "single-family",
+      "duplex",
+      "public-project",
+      "litigation",
+      "ch-zone"
+    ],
+    "decisionBody": "San Miguel County BOCC / Town Council (joint)",
+    "sourceConfidence": "Confirmed",
+    "editorialStatus": "Ready",
+    "keyQuestion": "Can 250 publicly-funded homes on a contested 39-acre mesa parcel be approved \u2014 or will the litigation and lost $5M grant derail the county\u2019s most ambitious workforce-housing effort?",
+    "whyItMatters": "Diamond Ranch is the largest single affordable-housing land acquisition in San Miguel County history \u2014 a 39-acre parcel jointly bought by the Town and County in 2021 for $7.21M to build up to 250 single-family and duplex homes for local workers. The project immediately ran into legal trouble: in June 2022 the Board of County Commissioners rezoned the land to Community Housing (CH), but neighboring Deep Creek landowners (Pamela M. Bennett et al. vs. Vickers) challenged the vote, arguing that a participating commissioner had a conflict of interest and that the rezoning was inconsistent with the San Miguel County Master Plan. In December 2022 the District Court sided with the challengers and reversed the BOCC\u2019s rezoning. That ruling cost the project a $5M DOLA affordable-housing grant, which was reallocated in November 2023 after funders lost patience with the delays. As of 2026 the rezoning remains unresolved and no construction has started, leaving the jointly-owned parcel sitting idle while Telluride\u2019s housing crisis deepens. The core tension: this land was purchased specifically to house the workforce that keeps the resort running, but neighboring property owners succeeded in using procedural litigation to block it \u2014 a pattern that critics say illustrates how difficult it is to site any new affordable housing near Telluride regardless of the political will behind it.",
+    "upcomingHearings": [],
+    "documents": [
+      {
+        "label": "Engage Telluride \u2014 Diamond Ridge Project Page",
+        "url": "https://engagetelluride.org/diamond-ridge"
+      }
+    ]
   }
 ]
