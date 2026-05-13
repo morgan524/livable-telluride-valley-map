@@ -94,7 +94,7 @@
     "squareFootage": null,
     "housingUnits": 27,
     "hotelRooms": null,
-    "estimatedEmployees": null,
+    "estimatedEmployees": 4,
     "publicDebtSubsidy": 27400000,
     "waterUtilityIssue": "Unknown",
     "trafficIssue": "Low",
@@ -227,7 +227,7 @@
     "squareFootage": null,
     "housingUnits": null,
     "hotelRooms": null,
-    "estimatedEmployees": null,
+    "estimatedEmployees": 5,
     "publicDebtSubsidy": null,
     "waterUtilityIssue": "Unknown",
     "trafficIssue": "Medium",
@@ -264,7 +264,7 @@
     "squareFootage": 252400,
     "housingUnits": 230,
     "hotelRooms": null,
-    "estimatedEmployees": null,
+    "estimatedEmployees": 30,
     "publicDebtSubsidy": null,
     "waterUtilityIssue": "Unknown",
     "trafficIssue": "Medium",
@@ -327,7 +327,7 @@
     "squareFootage": null,
     "housingUnits": 40,
     "hotelRooms": null,
-    "estimatedEmployees": null,
+    "estimatedEmployees": 8,
     "publicDebtSubsidy": null,
     "waterUtilityIssue": "Low",
     "trafficIssue": "Low",
@@ -421,7 +421,8 @@
         "time": "5:30 pm"
       }
     ],
-    "estimatedCostPerParkingSpace": 55000
+    "estimatedCostPerParkingSpace": 55000,
+    "estimatedEmployees": 18
   },
   {
     "id": "diamond-ridge",
@@ -487,7 +488,8 @@
         "label": "Engage Telluride \u2014 Diamond Ridge Project Page",
         "url": "https://engagetelluride.org/diamond-ridge"
       }
-    ]
+    ],
+    "estimatedEmployees": 25
   },
   {
     "id": "telluride-gondola-station",
@@ -507,7 +509,7 @@
     "squareFootage": 2960,
     "housingUnits": null,
     "hotelRooms": null,
-    "estimatedEmployees": null,
+    "estimatedEmployees": 35,
     "publicDebtSubsidy": null,
     "waterUtilityIssue": "Low",
     "trafficIssue": "High",
