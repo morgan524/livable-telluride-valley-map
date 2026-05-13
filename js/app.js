@@ -559,6 +559,13 @@ function openDrawer(project) {
       <div class="drawer-meta">${project.projectType.join(' · ')} &nbsp;·&nbsp; ${project.communityArea}</div>
     </div>
     <div class="drawer-body">
+      ${project.estimatedTotalCost ? `
+        <div class="drawer-section drawer-cost-banner">
+          <div class="drawer-label">Estimated Project Cost</div>
+          <div style="font-size:1.75rem;font-weight:800;color:#111;line-height:1.1;margin-top:2px">$${(project.estimatedTotalCost/1e6).toFixed(1)}M</div>
+          ${project.estimatedCostPerUnit ? `<div style="font-size:0.95rem;font-weight:600;color:#374151;margin-top:3px">$${(project.estimatedCostPerUnit/1000).toFixed(0)}K per unit</div>` : ''}
+          ${project.costNote ? `<div style="font-size:0.7rem;color:#9ca3af;margin-top:5px;font-style:italic;line-height:1.4">${project.costNote}</div>` : ''}
+        </div>` : ''}
       ${project.keyQuestion ? `
         <div class="drawer-section">
           <div class="drawer-label">Key Question</div>
