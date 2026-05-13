@@ -47,11 +47,13 @@ let massingLoaded    = false;
 // ─── Bootstrap ───────────────────────────────────────────────────────────────
 async function init() {
   // Init map
+  // Default to the Telluride / Mountain Village corridor — the core action area
+  const DEFAULT_VIEW = { center: [-107.847, 37.933], zoom: 11.6 };
   map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v11',
-    center: PRESET_VIEWS[0].center,
-    zoom:   PRESET_VIEWS[0].zoom,
+    center: DEFAULT_VIEW.center,
+    zoom:   DEFAULT_VIEW.zoom,
   });
   map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'bottom-right');
 
@@ -234,7 +236,7 @@ function buildPresetButtons() {
   const container = document.getElementById('preset-buttons');
   PRESET_VIEWS.forEach((view, i) => {
     const btn = document.createElement('button');
-    btn.className = 'preset-btn' + (i === 0 ? ' active' : '');
+    btn.className = 'preset-btn';
     btn.textContent = view.label;
     btn.addEventListener('click', () => {
       map.flyTo({ center: view.center, zoom: view.zoom, speed: 0.9 });
