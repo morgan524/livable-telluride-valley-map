@@ -6,7 +6,12 @@
     "location": "Lawson Hill / Society Turn, Hwy 145",
     "communityArea": "East End",
     "jurisdiction": "San Miguel County",
-    "projectType": ["Medical", "Commercial", "Hotel", "Land Use"],
+    "projectType": [
+      "Medical",
+      "Commercial",
+      "Hotel",
+      "Land Use"
+    ],
     "status": "Under Review",
     "latitude": 37.9503,
     "longitude": -107.8714,
@@ -27,7 +32,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Ready"
+    "editorialStatus": "Ready",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "smart-gondola-3a",
@@ -36,7 +43,10 @@
     "location": "Telluride to Mountain Village corridor",
     "communityArea": "Countywide",
     "jurisdiction": "SMART (San Miguel Authority for Regional Transportation)",
-    "projectType": ["Transportation", "Public Finance/Debt"],
+    "projectType": [
+      "Transportation",
+      "Public Finance/Debt"
+    ],
     "status": "Under Review",
     "latitude": 37.9361,
     "longitude": -107.8139,
@@ -57,7 +67,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": 40000000,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "voodoo-affordable-housing",
@@ -66,7 +78,10 @@
     "location": "Telluride",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
-    "projectType": ["Housing", "Public Finance/Debt"],
+    "projectType": [
+      "Housing",
+      "Public Finance/Debt"
+    ],
     "status": "Approved",
     "latitude": 37.9385,
     "longitude": -107.8113,
@@ -87,7 +102,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Ready"
+    "editorialStatus": "Ready",
+    "estimatedTotalCost": 27400000,
+    "estimatedCostPerUnit": 1015000
   },
   {
     "id": "chair-7-open-space",
@@ -96,10 +113,14 @@
     "location": "Mountain Village / Chair 7 lift area",
     "communityArea": "Mountain Village",
     "jurisdiction": "San Miguel County Open Space District",
-    "projectType": ["Open Space", "Hotel/Lodging", "Legal/Governance"],
+    "projectType": [
+      "Open Space",
+      "Hotel/Lodging",
+      "Legal/Governance"
+    ],
     "status": "Proposed",
-    "latitude": 37.9280,
-    "longitude": -107.8620,
+    "latitude": 37.928,
+    "longitude": -107.862,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": null,
@@ -117,7 +138,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "four-seasons-mountain-village",
@@ -126,7 +149,10 @@
     "location": "Mountain Village (4.4-acre site, Village core)",
     "communityArea": "Mountain Village",
     "jurisdiction": "Town of Mountain Village",
-    "projectType": ["Hotel/Lodging", "Commercial"],
+    "projectType": [
+      "Hotel/Lodging",
+      "Commercial"
+    ],
     "status": "Approved",
     "latitude": 37.9378,
     "longitude": -107.8451,
@@ -155,7 +181,9 @@
     "secondarySourceUrl": "https://press.fourseasons.com/news-releases/2025/new-four-seasons-in-telluride/",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Ready"
+    "editorialStatus": "Ready",
+    "estimatedTotalCost": 1000000000,
+    "estimatedCostPerUnit": 19231000
   },
   {
     "id": "six-senses-mountain-village",
@@ -164,10 +192,13 @@
     "location": "Mountain Village (last large hotel site)",
     "communityArea": "Mountain Village",
     "jurisdiction": "Town of Mountain Village",
-    "projectType": ["Hotel/Lodging", "Commercial"],
+    "projectType": [
+      "Hotel/Lodging",
+      "Commercial"
+    ],
     "status": "Approved",
     "latitude": 37.9335,
-    "longitude": -107.8480,
+    "longitude": -107.848,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": null,
@@ -190,7 +221,9 @@
     "secondarySourceUrl": "https://www.sixsenses.com/en/corporate/media-center/press-releases/2024/six-senses-telluride-announcement/",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": 285000000,
+    "estimatedCostPerUnit": 3701000
   },
   {
     "id": "aldasoro-pud",
@@ -199,7 +232,10 @@
     "location": "Aldasoro Ranch, north of Telluride",
     "communityArea": "East End",
     "jurisdiction": "San Miguel County",
-    "projectType": ["Land Use", "Legal/Governance"],
+    "projectType": [
+      "Land Use",
+      "Legal/Governance"
+    ],
     "status": "Litigation",
     "latitude": 37.9571,
     "longitude": -107.8713,
@@ -220,7 +256,9 @@
     "primarySourceUrl": "https://www.courts.state.co.us/",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "shandoka-lot-l",
@@ -229,7 +267,9 @@
     "location": "Telluride",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
-    "projectType": ["Housing"],
+    "projectType": [
+      "Housing"
+    ],
     "status": "Under Review",
     "latitude": 37.9425,
     "longitude": -107.8098,
@@ -250,7 +290,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "sunnyside-project",
@@ -259,7 +301,9 @@
     "location": "Telluride",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
-    "projectType": ["Housing"],
+    "projectType": [
+      "Housing"
+    ],
     "status": "Under Review",
     "latitude": 37.9451,
     "longitude": -107.8087,
@@ -280,37 +324,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review"
-  },
-  {
-    "id": "canyonlands-housing",
-    "name": "Canyonlands Housing Development",
-    "shortName": "Canyonlands",
-    "location": "Telluride area (east end)",
-    "communityArea": "East End",
-    "jurisdiction": "Town of Telluride / San Miguel County",
-    "projectType": ["Housing"],
-    "status": "Under Review",
-    "latitude": 37.9352,
-    "longitude": -107.8018,
-    "geometryType": "point",
-    "squareFootage": null,
-    "housingUnits": null,
-    "hotelRooms": null,
-    "estimatedEmployees": null,
-    "publicDebtSubsidy": null,
-    "waterUtilityIssue": "Unknown",
-    "trafficIssue": "Medium",
-    "decisionBody": "Telluride Town Council / BOCC",
-    "nextMeetingDate": null,
-    "publicCommentDeadline": null,
-    "keyQuestion": "What is the financing structure for Canyonlands, and how does its affordability commitment address the region's documented housing gap?",
-    "whyItMatters": "The Canyonlands housing development is one of several projects intended to address Telluride's severe workforce housing shortage. Details on unit count, financing, and income targeting remain under review.",
-    "deepDiveUrl": "https://livabletelluride.org/canyonlands-development-a-closer-look-at-telluride-s-financing/",
-    "primarySourceUrl": "",
-    "lastUpdated": "2026-05-13",
-    "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "hospital-district-society-turn",
@@ -319,10 +335,13 @@
     "location": "Society Turn / Lawson Hill area",
     "communityArea": "East End",
     "jurisdiction": "Telluride Hospital District",
-    "projectType": ["Civic Facility", "Medical"],
+    "projectType": [
+      "Civic Facility",
+      "Medical"
+    ],
     "status": "Proposed",
     "latitude": 37.9498,
-    "longitude": -107.8700,
+    "longitude": -107.87,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": null,
@@ -340,7 +359,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review"
+    "editorialStatus": "Needs Review",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "carhenge-lot",
@@ -349,9 +370,13 @@
     "location": "SW Telluride — surface parking lot near Lift 7",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
-    "projectType": ["Housing", "Commercial", "Land Use"],
+    "projectType": [
+      "Housing",
+      "Commercial",
+      "Land Use"
+    ],
     "status": "Under Review",
-    "latitude": 37.9370,
+    "latitude": 37.937,
     "longitude": -107.8195,
     "geometryType": "point",
     "squareFootage": 252400,
@@ -397,7 +422,9 @@
     "primarySourceUrl": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Ready"
+    "editorialStatus": "Ready",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "norwood-wrights-mesa-housing",
@@ -406,7 +433,10 @@
     "location": "Norwood / Wright's Mesa",
     "communityArea": "Norwood / Wright's Mesa",
     "jurisdiction": "Town of Norwood / San Miguel County",
-    "projectType": ["Housing", "Water/Infrastructure"],
+    "projectType": [
+      "Housing",
+      "Water/Infrastructure"
+    ],
     "status": "Under Review",
     "latitude": 38.1303,
     "longitude": -108.2808,
@@ -427,7 +457,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Unknown",
-    "editorialStatus": "Needs Source"
+    "editorialStatus": "Needs Source",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "west-end-economic-development",
@@ -436,7 +468,10 @@
     "location": "Nucla / Naturita",
     "communityArea": "West End",
     "jurisdiction": "San Miguel County / Town of Nucla / Town of Naturita",
-    "projectType": ["Civic Facility", "Water/Infrastructure"],
+    "projectType": [
+      "Civic Facility",
+      "Water/Infrastructure"
+    ],
     "status": "Under Review",
     "latitude": 38.2654,
     "longitude": -108.5567,
@@ -457,7 +492,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Unknown",
-    "editorialStatus": "Needs Source"
+    "editorialStatus": "Needs Source",
+    "estimatedTotalCost": null,
+    "estimatedCostPerUnit": null
   },
   {
     "id": "canyonlands-tower-house",
@@ -466,10 +503,13 @@
     "location": "West Telluride — near Clark's Market, Colorado Ave corridor",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
-    "projectType": ["Housing", "Land Use"],
+    "projectType": [
+      "Housing",
+      "Land Use"
+    ],
     "status": "Approved",
-    "latitude": 37.9370,
-    "longitude": -107.8158,
+    "latitude": 37.9367,
+    "longitude": -107.8172,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": 40,
@@ -495,6 +535,9 @@
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
-    "editorialStatus": "Ready"
+    "editorialStatus": "Ready",
+    "secondarySourceUrl": "https://livabletelluride.org/canyonlands-development-a-closer-look-at-telluride-s-financing/",
+    "estimatedTotalCost": 35080000,
+    "estimatedCostPerUnit": 877000
   }
 ]
