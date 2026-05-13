@@ -458,5 +458,43 @@
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Unknown",
     "editorialStatus": "Needs Source"
+  },
+  {
+    "id": "canyonlands-tower-house",
+    "name": "Canyonlands / Tower House Affordable Housing",
+    "shortName": "Canyonlands",
+    "location": "West Telluride — near Clark's Market, Colorado Ave corridor",
+    "communityArea": "Telluride",
+    "jurisdiction": "Town of Telluride",
+    "projectType": ["Housing", "Land Use"],
+    "status": "Under Review",
+    "latitude": 37.9370,
+    "longitude": -107.8158,
+    "geometryType": "point",
+    "squareFootage": null,
+    "housingUnits": 40,
+    "hotelRooms": null,
+    "estimatedEmployees": null,
+    "publicDebtSubsidy": null,
+    "waterUtilityIssue": "Low",
+    "trafficIssue": "Low",
+    "decisionBody": "HARC / P&Z / Telluride Town Council",
+    "nextMeetingDate": null,
+    "publicCommentDeadline": null,
+    "documents": [
+      {
+        "title": "Canyonlands / Tower House Community Presentation — June 2023",
+        "url": "",
+        "date": "2023-06-01",
+        "size": ""
+      }
+    ],
+    "keyQuestion": "The Town of Telluride acquired two parcels near Clark's Market (Tower House in 2018, Canyonlands in 2021) specifically for affordable housing. What will be built, at what cost, and who will it serve?",
+    "whyItMatters": "These two Town-owned parcels — 0.33 AC Tower House and 0.20 AC Canyonlands — represent some of the last infill land in west Telluride purchased specifically for affordable housing. The 2023 program called for 35–45 units, ~85% deed-restricted at 80–150% AMI, with a mix of rental and for-sale units. The San Miguel County Housing Needs Assessment estimated a shortfall of 800+ units by 2026. Development here is a direct test of whether the Town can deliver on its own housing commitments.",
+    "deepDiveUrl": "https://livabletelluride.org/from-36-million-to-103-million-how-telluride-became-richer-than-a-lottery-winner/",
+    "primarySourceUrl": "",
+    "lastUpdated": "2026-05-13",
+    "sourceConfidence": "Confirmed",
+    "editorialStatus": "Ready"
   }
 ]
