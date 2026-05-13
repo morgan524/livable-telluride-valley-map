@@ -473,5 +473,60 @@ body {
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
+/* UPCOMING HEARINGS */
+.hearing-alert-label {
+  color: #b91c1c !important;
+}
+.hearing-card {
+  background: #fff8f0;
+  border: 1px solid #fed7aa;
+  border-left: 3px solid #ea580c;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 5px;
+}
+.hearing-type {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #c2410c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+.hearing-date {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+.hearing-desc {
+  font-size: 0.72rem;
+  color: #555;
+  line-height: 1.45;
+  margin-bottom: 7px;
+}
+.hearing-links { display: flex; flex-wrap: wrap; gap: 4px; }
+.hearing-link {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 4px;
+  padding: 3px 7px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hearing-link:hover { background: #d1fae5; }
+
+/* DOCUMENT DOWNLOAD BUTTON */
+.drawer-btn-download {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #bfdbfe !important;
+  font-weight: 600;
+}
+.drawer-btn-download:hover { background: #dbeafe !important; opacity: 1; }
+
 /* Mapbox overrides */
 .mapboxgl-ctrl-bottom-right { z-index: 5; }

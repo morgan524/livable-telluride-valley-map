@@ -471,9 +471,42 @@ function openDrawer(project) {
 
   const datesHtml = (() => {
     const parts = [];
-    if (project.nextMeetingDate)       parts.push(`<div class="drawer-label">Next Meeting</div><p class="drawer-date">${project.nextMeetingDate}</p>`);
+    if (project.nextMeetingDate) {
+      const label = project.nextMeetingType || 'Next Meeting';
+      const timeStr = project.nextMeetingTime ? ` &nbsp;·&nbsp; ${project.nextMeetingTime}` : '';
+      parts.push(`<div class="drawer-label">${label}</div><p class="drawer-date">${project.nextMeetingDate}${timeStr}</p>`);
+    }
     if (project.publicCommentDeadline) parts.push(`<div class="drawer-label" style="margin-top:6px">Comment Deadline</div><p class="drawer-date">${project.publicCommentDeadline}</p>`);
     return parts.length ? `<div class="drawer-section">${parts.join('')}</div>` : '';
+  })();
+
+  const upcomingHearingsHtml = (() => {
+    if (!Array.isArray(project.upcomingHearings) || !project.upcomingHearings.length) return '';
+    const cards = project.upcomingHearings.map(h => {
+      const d = new Date(h.date + 'T12:00:00');
+      const dateStr = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+      const links = [];
+      if (h.agendaUrl)   links.push(`<a href="${h.agendaUrl}" target="_blank" rel="noopener" class="hearing-link">Full Agenda →</a>`);
+      if (h.zoomUrl)     links.push(`<a href="${h.zoomUrl}" target="_blank" rel="noopener" class="hearing-link">Join Zoom →</a>`);
+      if (h.calendarUrl) links.push(`<a href="${h.calendarUrl}" target="_blank" rel="noopener" class="hearing-link">Add to Calendar</a>`);
+      return `<div class="hearing-card">
+        <div class="hearing-type">${h.type}</div>
+        <div class="hearing-date">${dateStr} · ${h.time}</div>
+        ${h.description ? `<div class="hearing-desc">${h.description}</div>` : ''}
+        ${links.length ? `<div class="hearing-links">${links.join('')}</div>` : ''}
+      </div>`;
+    }).join('');
+    return `<div class="drawer-section"><div class="drawer-label hearing-alert-label">⚠ Upcoming Hearing</div>${cards}</div>`;
+  })();
+
+  const documentsHtml = (() => {
+    if (!Array.isArray(project.documents) || !project.documents.length) return '';
+    const btns = project.documents.map((doc, i) =>
+      `<a href="${doc.url}" target="_blank" rel="noopener" class="drawer-btn ${i === 0 ? 'drawer-btn-download' : ''}">
+        ⬇ ${doc.title}${doc.size ? ' (' + doc.size + ')' : ''}
+      </a>`
+    ).join('');
+    return `<div class="drawer-section"><div class="drawer-label">Project Documents</div><div class="drawer-links" style="margin-top:6px">${btns}</div></div>`;
   })();
 
   const confClass = 'confidence-' + project.sourceConfidence.toLowerCase().replace(/[^a-z]/g, '-');
@@ -514,6 +547,8 @@ function openDrawer(project) {
         <p>${project.decisionBody}</p>
       </div>
       ${datesHtml}
+      ${upcomingHearingsHtml}
+      ${documentsHtml}
       <div class="drawer-section">
         <div class="drawer-label">Source Confidence</div>
         <div class="confidence-badge ${confClass}">${project.sourceConfidence}</div>

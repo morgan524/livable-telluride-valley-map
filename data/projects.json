@@ -433,6 +433,63 @@
     "editorialStatus": "Needs Review"
   },
   {
+    "id": "carhenge-lot",
+    "name": "Carhenge Lot Redevelopment",
+    "shortName": "Carhenge",
+    "location": "SW Telluride — surface parking lot near Lift 7",
+    "communityArea": "Telluride",
+    "jurisdiction": "Town of Telluride",
+    "projectType": ["Housing", "Commercial", "Land Use"],
+    "status": "Under Review",
+    "latitude": 37.9313,
+    "longitude": -107.8271,
+    "geometryType": "point",
+    "squareFootage": null,
+    "housingUnits": null,
+    "hotelRooms": null,
+    "estimatedEmployees": null,
+    "publicDebtSubsidy": null,
+    "waterUtilityIssue": "Unknown",
+    "trafficIssue": "Medium",
+    "decisionBody": "HARC / P&Z / Telluride Town Council",
+    "nextMeetingDate": "2026-05-20",
+    "nextMeetingType": "HARC Work Session",
+    "nextMeetingTime": "5:30 pm",
+    "publicCommentDeadline": null,
+    "upcomingHearings": [
+      {
+        "type": "HARC Work Session",
+        "date": "2026-05-20",
+        "time": "5:30 pm",
+        "description": "Consideration of an application for a Work Session on proposed new construction on Town property, pursuant to LUC 5-201.C",
+        "agendaUrl": "https://telluride-co.civicweb.net/Portal/MeetingInformation.aspx?Id=8014",
+        "zoomUrl": "https://us06web.zoom.us/meeting/register/KKzcuKFdTuyXzpw65k2aAA",
+        "calendarUrl": "https://evt.to/pw25gfmhp6dg"
+      }
+    ],
+    "documents": [
+      {
+        "title": "HARC Work Session — May 5, 2026",
+        "url": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
+        "date": "2026-05-05",
+        "size": "27 MB"
+      },
+      {
+        "title": "P&Z Work Session Application — March 26, 2026",
+        "url": "https://engagetelluride.org/32089/widgets/113355/documents/79175",
+        "date": "2026-03-26",
+        "size": "20 MB"
+      }
+    ],
+    "keyQuestion": "The Town of Telluride is proposing to redevelop the Carhenge parking lot — Town-owned land at the base of Lift 7 — into a mixed-use housing and commercial neighborhood. What is the cost, who benefits, and what say does the public have before it's built?",
+    "whyItMatters": "The Carhenge site (Lots 34 and 34B) is a Town-owned surface parking lot in southwest Telluride. The Town and Design Workshop are advancing a concept for mixed-use housing, underground parking, and community-serving commercial uses through a full entitlement gauntlet: HARC design review, PUD, Subdivision, and Large Scale Activity applications. As of May 2026 the project is in HARC work session review, with a broader public hearing process ahead. This is one of the last large, Town-owned development sites in Telluride proper.",
+    "deepDiveUrl": "https://engagetelluride.org/carhenge-lot-redevelopment-project",
+    "primarySourceUrl": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
+    "lastUpdated": "2026-05-13",
+    "sourceConfidence": "Confirmed",
+    "editorialStatus": "Ready"
+  },
+  {
     "id": "norwood-wrights-mesa-housing",
     "name": "Norwood / Wright's Mesa Housing & Infrastructure",
     "shortName": "Norwood Housing",

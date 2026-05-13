@@ -161,5 +161,70 @@
         ]]
       }
     }
+  ,
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "carhenge-block-a-massing",
+        "project_id": "carhenge-lot",
+        "name": "Carhenge Lot — Residential Block (South)",
+        "status": "Under Review",
+        "project_type": "Housing / Mixed-Use",
+        "height_ft": 48,
+        "height_m": 14.6,
+        "base_m": 0,
+        "floors": 4,
+        "sqft": null,
+        "hotel_rooms": null,
+        "housing_units": null,
+        "source_confidence": "Unknown",
+        "source_note": "Schematic massing only — derived from May 2026 HARC Work Session concept drawings. Building form, footprint, and height are illustrative pending PUD application. Actual design subject to HARC review.",
+        "deep_dive_url": "https://engagetelluride.org/carhenge-lot-redevelopment-project",
+        "primary_source_url": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8279, 37.9308],
+          [-107.8261, 37.9308],
+          [-107.8261, 37.9315],
+          [-107.8279, 37.9315],
+          [-107.8279, 37.9308]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "carhenge-block-b-massing",
+        "project_id": "carhenge-lot",
+        "name": "Carhenge Lot — Commercial / Community Block (North)",
+        "status": "Under Review",
+        "project_type": "Housing / Mixed-Use",
+        "height_ft": 36,
+        "height_m": 11.0,
+        "base_m": 0,
+        "floors": 3,
+        "sqft": null,
+        "hotel_rooms": null,
+        "housing_units": null,
+        "source_confidence": "Unknown",
+        "source_note": "Schematic massing only — derived from May 2026 HARC Work Session concept drawings. Ground-floor commercial / community-serving uses with housing above. Subject to full HARC and PUD review.",
+        "deep_dive_url": "https://engagetelluride.org/carhenge-lot-redevelopment-project",
+        "primary_source_url": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8279, 37.9319],
+          [-107.8261, 37.9319],
+          [-107.8261, 37.9324],
+          [-107.8279, 37.9324],
+          [-107.8279, 37.9319]
+        ]]
+      }
+    }
   ]
 }
