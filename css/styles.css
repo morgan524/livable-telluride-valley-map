@@ -233,10 +233,20 @@ body {
   border: 2px solid rgba(255,255,255,0.9);
   box-shadow: 0 1px 5px rgba(0,0,0,0.35);
   cursor: pointer;
-  transition: transform 0.15s;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 .map-marker:hover { transform: scale(1.45); z-index: 100; }
-.map-marker.active-marker { transform: scale(1.5); z-index: 200; box-shadow: 0 0 0 3px rgba(255,255,255,0.8), 0 2px 8px rgba(0,0,0,0.4); }
+.map-marker.active-marker {
+  transform: scale(1.8);
+  z-index: 200;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #1a1a1a, 0 0 0 5px rgba(255,255,255,0.7), 0 3px 12px rgba(0,0,0,0.55);
+  animation: markerPulse 1.8s ease-in-out infinite;
+}
+@keyframes markerPulse {
+  0%, 100% { box-shadow: 0 0 0 3px #1a1a1a, 0 0 0 5px rgba(255,255,255,0.7), 0 3px 12px rgba(0,0,0,0.55); }
+  50%       { box-shadow: 0 0 0 3px #1a1a1a, 0 0 0 8px rgba(255,255,255,0.35), 0 3px 16px rgba(0,0,0,0.4); }
+}
 
 /* LEGEND */
 #legend {
