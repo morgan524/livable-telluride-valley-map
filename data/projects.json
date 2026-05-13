@@ -278,41 +278,6 @@
     "costNote": null
   },
   {
-    "id": "shandoka-lot-l",
-    "name": "Shandoka / Lot L Housing Projects",
-    "shortName": "Shandoka & Lot L",
-    "location": "Telluride",
-    "communityArea": "Telluride",
-    "jurisdiction": "Town of Telluride",
-    "projectType": [
-      "Housing"
-    ],
-    "status": "Under Review",
-    "latitude": 37.9425,
-    "longitude": -107.8098,
-    "geometryType": "point",
-    "squareFootage": null,
-    "housingUnits": null,
-    "hotelRooms": null,
-    "estimatedEmployees": null,
-    "publicDebtSubsidy": null,
-    "waterUtilityIssue": "High",
-    "trafficIssue": "Medium",
-    "decisionBody": "Telluride Town Council / Planning & Zoning Commission",
-    "nextMeetingDate": null,
-    "publicCommentDeadline": null,
-    "keyQuestion": "Can the Town afford to build 900 public parking spaces AND 60 affordable housing units on Lot L \u2014 and what is the true cost to taxpayers?",
-    "whyItMatters": "Shandoka Lot L is the Town's best near-term opportunity to replace parking displaced by the Carhenge redevelopment AND add deeply affordable workforce housing in one project. The PUD process, high groundwater, and San Miguel River constraints make construction unusually complex and expensive. How the Town finances it \u2014 and who bears the cost \u2014 is a central public policy question.",
-    "deepDiveUrl": "https://livabletelluride.org/empowering-telluride-the-future-of-lot-l-development/",
-    "primarySourceUrl": "",
-    "lastUpdated": "2026-05-13",
-    "sourceConfidence": "Estimated",
-    "editorialStatus": "Needs Review",
-    "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null,
-    "costNote": null
-  },
-  {
     "id": "sunnyside-project",
     "name": "Sunnyside Housing Project",
     "shortName": "Sunnyside",
@@ -599,15 +564,15 @@
       "constructionStart": null,
       "completionExpected": null
     },
-    "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null,
-    "costNote": "No cost estimate in public documents (May 2026 P&Z worksession). Structured parking at this scale ~$40\u201360M; housing component ~$45\u201355M est. separately.",
+    "estimatedTotalCost": 90000000,
+    "estimatedCostPerUnit": 1500000,
+    "costNote": "No official cost estimate released (as of May 2026). Structured parking at this scale (~900 spaces) typically runs $40\u201360M; housing + commercial component estimated ~$30\u201350M. No funding plan has been identified.",
     "deedRestricted": true,
     "deedRestrictedPercent": 100,
     "applicant": "Design Workshop (on behalf of Town of Telluride)",
     "owner": "Town of Telluride",
     "deepDiveUrl": "https://livabletelluride.org/",
-    "primarySourceUrl": "https://engagetelluride.org/",
+    "primarySourceUrl": "https://engagetelluride.org/shandoka-lot-redevelopment-project",
     "lastUpdated": "2026-05-13",
     "tags": [
       "parking-garage",
@@ -615,6 +580,21 @@
       "transit",
       "public-project",
       "pud"
+    ],
+    "decisionBody": "Town Council / HARC / Planning & Zoning",
+    "sourceConfidence": "Confirmed",
+    "editorialStatus": "Ready",
+    "keyQuestion": "Can the Town afford to build ~900 public parking spaces AND 60 affordable housing units on a flood-constrained lot \u2014 and who pays for it?",
+    "whyItMatters": "Shandoka Lot L is a publicly owned site at the edge of the San Miguel River corridor, and this is the Town\u2019s most ambitious housing + infrastructure project in a generation. Alternative 2 packs a 900-space structured garage, 60 deed-restricted units, childcare, and neighborhood commercial into 4 acres \u2014 requiring height, site-coverage, and floor-area variances from Town code. No official cost estimate has been released, but comparable projects suggest a $90M+ price tag with no identified funding source. Community objections focus on: the scale and massing of the garage structure in a residential neighborhood; whether public money should subsidize intercept/skier parking rather than local commuter needs; the high groundwater and San Miguel River floodplain constraints that will substantially increase construction costs; and whether bundling housing with a parking structure is the most cost-effective path to affordable units. HARC and P&Z review begins May 2026.",
+    "upcomingHearings": [
+      {
+        "date": "2026-05-28",
+        "body": "Planning & Zoning Commission",
+        "type": "Work Session",
+        "description": "P&Z Work Session on Shandoka Lot Redevelopment \u2014 5:30 pm",
+        "url": "https://engagetelluride.org/shandoka-lot-redevelopment-project",
+        "time": "5:30 pm"
+      }
     ]
   }
 ]
