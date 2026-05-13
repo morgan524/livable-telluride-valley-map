@@ -497,8 +497,8 @@ function openDrawer(project) {
     if (project.estimatedEmployees)parts.push(`<div class="stat"><span>${project.estimatedEmployees.toLocaleString()}</span>employees</div>`);
     if (project.publicDebtSubsidy) parts.push(`<div class="stat"><span>$${(project.publicDebtSubsidy/1e6).toFixed(1)}M</span>public debt</div>`);
     if (project.parkingSpaces)     parts.push(`<div class="stat"><span>${project.parkingSpaces.toLocaleString()}</span>parking spaces</div>`);
-    if (project.estimatedTotalCost) parts.push(`<div class="stat"><span>$${(project.estimatedTotalCost/1e6).toFixed(1)}M</span>est. total cost</div>`);
-    if (project.estimatedCostPerUnit) parts.push(`<div class="stat"><span>$${(project.estimatedCostPerUnit/1000).toFixed(0)}K</span>est. cost/unit</div>`);
+    if (project.estimatedTotalCost) parts.push(`<div class="stat"><span>${project.estimatedTotalCost>=1e9?'$'+(project.estimatedTotalCost/1e9).toFixed(project.estimatedTotalCost%1e9===0?0:1)+'B':'$'+(project.estimatedTotalCost/1e6).toFixed(1)+'M'}</span>est. total cost</div>`);
+    if (project.estimatedCostPerUnit) parts.push(`<div class="stat"><span>${project.estimatedCostPerUnit>=1e6?'$'+(project.estimatedCostPerUnit/1e6).toFixed(1)+'M':'$'+(project.estimatedCostPerUnit/1000).toFixed(0)+'K'}</span>est. cost/unit</div>`);
     return parts.length ? `<div class="drawer-section"><div class="drawer-label">Key Numbers</div><div class="drawer-stats-grid">${parts.join('')}</div></div>` : '';
   })();
 
