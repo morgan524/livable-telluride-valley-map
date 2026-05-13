@@ -632,9 +632,9 @@
   },
   {
     "id": "diamond-ridge",
-    "name": "Diamond Ranch \u2014 Community Housing (Diamond Ridge)",
-    "shortName": "Diamond Ranch",
-    "location": "West Telluride \u2014 Last Dollar Rd turnoff, Hwy 145",
+    "name": "Diamond Ridge \u2014 Community Housing",
+    "shortName": "Diamond Ridge",
+    "location": "West of Telluride \u2014 Last Dollar Rd turnoff, Hwy 145",
     "communityArea": "Telluride / San Miguel County",
     "jurisdiction": "Town of Telluride / San Miguel County (joint)",
     "projectType": [
@@ -648,7 +648,7 @@
     "housingUnits": 250,
     "hotelRooms": null,
     "parkingSpaces": null,
-    "description": "39-acre parcel jointly purchased by the Town of Telluride and San Miguel County in 2021 for $7.21M (50/50 ARPA + reserves) to develop up to 250 single-family and duplex Community Housing (CH-zoned) units. Located near the Last Dollar Rd turnoff from Hwy 145, approximately 2 miles west of downtown Telluride. At least 50% of homes must be priced at or below 120% AMI. No apartments. A $5M DOLA grant awarded in 2022 was reallocated in November 2023 due to litigation-caused delays. The project remains stalled pending resolution of the rezoning challenge.",
+    "description": "39-acre parcel jointly purchased by the Town of Telluride and San Miguel County in 2021 for $7.21M (50/50 ARPA funds + County reserves) to develop up to 250 single-family and duplex Community Housing (CH-zoned) units. Located near the Last Dollar Rd turnoff from Hwy 145, approximately 2 miles west of downtown Telluride. Only about 20 of the 39 acres are considered buildable given terrain and open space requirements. At least 50% of homes must be priced at or below 120% AMI; no apartments. A $5M DOLA grant awarded in 2022 was reallocated in November 2023 after litigation-caused delays. The underlying rezoning has been reversed by a district court; the project remains stalled.",
     "keyIssues": [
       "250 single-family and duplex homes on ~20 buildable acres of a 39-acre parcel",
       "At least 50% priced at or below 120% AMI; no apartments",
@@ -656,7 +656,8 @@
       "June 2022 BOCC rezoning to Community Housing (CH) challenged by Deep Creek landowners",
       "December 2022 District Court reversed BOCC rezoning \u2014 commissioner recusal issue + master plan inconsistency",
       "$5M DOLA affordable housing grant reallocated November 2023 due to litigation delay",
-      "Project stalled pending reconsidering or new rezoning approval"
+      "Land acquisition ($7.21M) already spent; no construction cost estimate or financing plan published",
+      "Project stalled pending resolution of rezoning challenge"
     ],
     "timeline": {
       "applicationFiled": "2021",
@@ -685,8 +686,8 @@
     "decisionBody": "San Miguel County BOCC / Town Council (joint)",
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Ready",
-    "keyQuestion": "Can 250 publicly-funded homes on a contested 39-acre mesa parcel be approved \u2014 or will the litigation and lost $5M grant derail the county\u2019s most ambitious workforce-housing effort?",
-    "whyItMatters": "Diamond Ranch is the largest single affordable-housing land acquisition in San Miguel County history \u2014 a 39-acre parcel jointly bought by the Town and County in 2021 for $7.21M to build up to 250 single-family and duplex homes for local workers. The project immediately ran into legal trouble: in June 2022 the Board of County Commissioners rezoned the land to Community Housing (CH), but neighboring Deep Creek landowners (Pamela M. Bennett et al. vs. Vickers) challenged the vote, arguing that a participating commissioner had a conflict of interest and that the rezoning was inconsistent with the San Miguel County Master Plan. In December 2022 the District Court sided with the challengers and reversed the BOCC\u2019s rezoning. That ruling cost the project a $5M DOLA affordable-housing grant, which was reallocated in November 2023 after funders lost patience with the delays. As of 2026 the rezoning remains unresolved and no construction has started, leaving the jointly-owned parcel sitting idle while Telluride\u2019s housing crisis deepens. The core tension: this land was purchased specifically to house the workforce that keeps the resort running, but neighboring property owners succeeded in using procedural litigation to block it \u2014 a pattern that critics say illustrates how difficult it is to site any new affordable housing near Telluride regardless of the political will behind it.",
+    "keyQuestion": "With the rezoning reversed, the DOLA grant gone, and $7.21M in public acquisition costs already on the books \u2014 what does it actually cost to build 250 homes on a mesa two miles from town, who finances it, and does the math close?",
+    "whyItMatters": "Diamond Ridge is a 39-acre parcel the Town of Telluride and San Miguel County bought jointly in 2021 for $7.21M \u2014 half from Town ARPA funds, half from County reserves \u2014 to build up to 250 single-family and duplex Community Housing units near the Last Dollar Rd turnoff. The county rezoned the land to Community Housing (CH) in June 2022, but neighboring Deep Creek landowners challenged the vote on procedural grounds: they argued a participating BOCC commissioner had a conflict of interest and that the rezoning was inconsistent with the San Miguel County Master Plan. In December 2022 the District Court reversed the rezoning. The practical fallout was swift \u2014 a $5M DOLA affordable-housing grant was reallocated in November 2023 when the litigation-caused delays pushed the project past the grant's timeline. As of 2026 the land sits vacant, the rezoning is unresolved, and neither the Town nor the County has published a construction cost estimate or a financing plan for the homes themselves. Supporters argue the project is essential to house workers priced out of the local market. Opponents have questioned both the procedural basis of the original rezoning and whether placing 250 homes on this particular parcel \u2014 on a mesa with limited road access and significant terrain constraints \u2014 is the right use of scarce public capital. The $7.21M is already spent. Whatever comes next will cost considerably more, and no one has yet said where that money comes from.",
     "upcomingHearings": [],
     "documents": [
       {
