@@ -42,7 +42,39 @@
       "medicalCenterSqFt": 40000,
       "hotelRooms": 125,
       "estimatedNewEmployees": 1058
-    }
+    },
+    "sfBreakdown": [
+      {
+        "label": "Hotel & Conference",
+        "sqft": 120000,
+        "type": "hotel"
+      },
+      {
+        "label": "Office / Flex Space",
+        "sqft": 75000,
+        "type": "commercial"
+      },
+      {
+        "label": "Employee Housing (121 units)",
+        "sqft": 90000,
+        "type": "housing"
+      },
+      {
+        "label": "Regional Medical Center",
+        "sqft": 40000,
+        "type": "medical"
+      },
+      {
+        "label": "Retail / Commercial",
+        "sqft": 50000,
+        "type": "commercial"
+      },
+      {
+        "label": "Community / Amenity",
+        "sqft": 25000,
+        "type": "amenity"
+      }
+    ]
   },
   {
     "id": "smart-gondola-3a",

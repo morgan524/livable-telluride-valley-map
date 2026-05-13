@@ -569,6 +569,28 @@ function openDrawer(project) {
           ${project.costNote ? `<div style="font-size:0.7rem;color:#9ca3af;margin-top:5px;font-style:italic;line-height:1.4">${project.costNote}</div>` : ''}
         </div>` : ''}
 
+
+      ${/* ── 1b. SF PROGRAM BREAKDOWN ── */ (project.sfBreakdown && project.sfBreakdown.length) ? (() => {
+        const colors = {hotel:'#7c3aed',commercial:'#0369a1',housing:'#15803d',medical:'#b91c1c',amenity:'#92400e'};
+        const totalSF = project.squareFootage || project.sfBreakdown.reduce((s,r)=>s+r.sqft,0);
+        const rows = project.sfBreakdown.map(r => {
+          const pct = Math.round(r.sqft / totalSF * 100);
+          const color = colors[r.type] || '#6b7280';
+          return `<div style="display:flex;justify-content:space-between;align-items:center;margin-top:5px">
+            <span style="font-size:0.78rem;color:#374151;display:flex;align-items:center;gap:5px">
+              <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};flex-shrink:0"></span>
+              ${r.label}
+            </span>
+            <span style="font-size:0.78rem;font-weight:600;color:#111;white-space:nowrap;margin-left:8px">${(r.sqft/1000).toFixed(0)}K SF&nbsp;<span style="font-weight:400;color:#9ca3af">(${pct}%)</span></span>
+          </div>`;
+        }).join('');
+        return `<div class="drawer-section drawer-cost-banner">
+          <div class="drawer-label">Program Breakdown</div>
+          <div style="font-size:1.75rem;font-weight:800;color:#111;line-height:1.1;margin-top:2px">${(totalSF/1000).toFixed(0)}K SF total</div>
+          <div style="margin-top:8px;border-top:1px solid rgba(0,0,0,0.08);padding-top:8px">${rows}</div>
+        </div>`;
+      })() : ''}
+
       ${/* ── 2. BALLOON PAYMENT ALERT ── */ project.balloonPayment ? `
         <div class="drawer-section drawer-balloon-alert">
           <div class="drawer-label">⚠ Balloon Payment Due</div>
