@@ -116,7 +116,7 @@
     "id": "voodoo-affordable-housing",
     "name": "VooDoo Affordable Housing",
     "shortName": "VooDoo Housing",
-    "location": "Telluride",
+    "location": "215-223 E Colorado Ave, Telluride",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
     "projectType": [
@@ -124,8 +124,8 @@
       "Public Finance/Debt"
     ],
     "status": "Approved",
-    "latitude": 37.9385,
-    "longitude": -107.8113,
+    "latitude": 37.933,
+    "longitude": -107.8063,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": 27,
