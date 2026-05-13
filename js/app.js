@@ -47,11 +47,12 @@ let massingLoaded    = false;
 // ─── Bootstrap ───────────────────────────────────────────────────────────────
 async function init() {
   // Init map
-  // Default to the Telluride / Mountain Village corridor — the core action area
-  const DEFAULT_VIEW = { center: [-107.847, 37.933], zoom: 11.6 };
+  // Default to the corridor from Telluride through Mountain Village to Society Turn
+  // Telluride: 37.936,-107.814 | MV: 37.931,-107.856 | Society Turn: 37.950,-107.871
+  const DEFAULT_VIEW = { center: [-107.843, 37.938], zoom: 12.3 };
   map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v11',
+    style: 'mapbox://styles/mapbox/outdoors-v12',
     center: DEFAULT_VIEW.center,
     zoom:   DEFAULT_VIEW.zoom,
   });

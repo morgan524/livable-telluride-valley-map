@@ -25,11 +25,11 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [[
-          [-107.8590, 37.9356],
-          [-107.8530, 37.9356],
-          [-107.8530, 37.9384],
-          [-107.8590, 37.9384],
-          [-107.8590, 37.9356]
+          [-107.8744, 37.9489],
+          [-107.8684, 37.9489],
+          [-107.8684, 37.9517],
+          [-107.8744, 37.9517],
+          [-107.8744, 37.9489]
         ]]
       }
     },
@@ -57,11 +57,11 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [[
-          [-107.8505, 37.9414],
-          [-107.8483, 37.9414],
-          [-107.8483, 37.9426],
-          [-107.8505, 37.9426],
-          [-107.8505, 37.9414]
+          [-107.8462, 37.9372],
+          [-107.8440, 37.9372],
+          [-107.8440, 37.9384],
+          [-107.8462, 37.9384],
+          [-107.8462, 37.9372]
         ]]
       }
     },
@@ -89,11 +89,11 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [[
-          [-107.8523, 37.9400],
-          [-107.8506, 37.9400],
-          [-107.8506, 37.9412],
-          [-107.8523, 37.9412],
-          [-107.8523, 37.9400]
+          [-107.8489, 37.9329],
+          [-107.8471, 37.9329],
+          [-107.8471, 37.9341],
+          [-107.8489, 37.9341],
+          [-107.8489, 37.9329]
         ]]
       }
     },
@@ -101,9 +101,9 @@
       "type": "Feature",
       "properties": {
         "id": "voodoo-housing-massing",
-        "project_id": "voodoo-employee-housing",
-        "name": "VooDoo Employee Housing",
-        "status": "Proposed",
+        "project_id": "voodoo-affordable-housing",
+        "name": "VooDoo Affordable Housing",
+        "status": "Approved",
         "project_type": "Housing",
         "height_ft": 45,
         "height_m": 13.72,
@@ -111,9 +111,9 @@
         "floors": 4,
         "sqft": 85000,
         "hotel_rooms": null,
-        "housing_units": 110,
+        "housing_units": 27,
         "source_confidence": "Estimated",
-        "source_note": "Approximate block massing based on proposed 110-unit affordable housing concept. Site and building form not yet confirmed in final application.",
+        "source_note": "Approximate block massing based on 27-unit affordable housing project. Site and building form based on public records.",
         "deep_dive_url": "https://livabletelluride.org/the-voodoo-project/",
         "primary_source_url": "",
         "last_updated": "2026-05-13"
@@ -121,11 +121,11 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [[
-          [-107.8128, 37.9396],
-          [-107.8108, 37.9396],
-          [-107.8108, 37.9408],
-          [-107.8128, 37.9408],
-          [-107.8128, 37.9396]
+          [-107.8123, 37.9379],
+          [-107.8103, 37.9379],
+          [-107.8103, 37.9391],
+          [-107.8123, 37.9391],
+          [-107.8123, 37.9379]
         ]]
       }
     },
@@ -133,10 +133,10 @@
       "type": "Feature",
       "properties": {
         "id": "chair-7-massing",
-        "project_id": "chair-7-redevelopment",
+        "project_id": "chair-7-open-space",
         "name": "Chair 7 Redevelopment Area",
         "status": "Proposed",
-        "project_type": "Commercial / Hotel / Land Use",
+        "project_type": "Open Space / Hotel / Land Use",
         "height_ft": 60,
         "height_m": 18.29,
         "base_m": 0,
@@ -153,11 +153,11 @@
       "geometry": {
         "type": "Polygon",
         "coordinates": [[
-          [-107.8535, 37.9438],
-          [-107.8515, 37.9438],
-          [-107.8515, 37.9450],
-          [-107.8535, 37.9450],
-          [-107.8535, 37.9438]
+          [-107.8630, 37.9274],
+          [-107.8610, 37.9274],
+          [-107.8610, 37.9286],
+          [-107.8630, 37.9286],
+          [-107.8630, 37.9274]
         ]]
       }
     }
