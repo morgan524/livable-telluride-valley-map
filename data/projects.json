@@ -1,7 +1,7 @@
 [
   {
     "id": "society-turn-pud",
-    "name": "Society Turn PUD",
+    "name": "Society Turn PUD \u2014 Medical Center",
     "shortName": "Society Turn",
     "location": "Lawson Hill / Society Turn, Hwy 145",
     "communityArea": "East End",
@@ -633,40 +633,5 @@
         "url": "https://engagetelluride.org/diamond-ridge"
       }
     ]
-  },
-  {
-    "id": "society-turn-medical-center",
-    "name": "Society Turn \u2014 Medical Center",
-    "shortName": "ST Medical Center",
-    "location": "Lawson Hill / Society Turn, Hwy 145",
-    "communityArea": "East End",
-    "jurisdiction": "San Miguel County",
-    "projectType": [
-      "Medical"
-    ],
-    "status": "Approved",
-    "latitude": 37.949516,
-    "longitude": -107.874471,
-    "geometryType": "point",
-    "squareFootage": 40000,
-    "housingUnits": null,
-    "hotelRooms": null,
-    "estimatedEmployees": null,
-    "publicDebtSubsidy": null,
-    "waterUtilityIssue": "High",
-    "trafficIssue": "Medium",
-    "decisionBody": "BOCC",
-    "nextMeetingDate": null,
-    "publicCommentDeadline": null,
-    "keyQuestion": "The Society Turn PUD reserves a 40,000 sq ft medical campus site \u2014 when will construction drawings be submitted, and who will operate the facility?",
-    "whyItMatters": "The PUD for Society Turn was approved with a 40,000 sq ft regional medical center as a centerpiece of the program. As of 2026, no construction drawings have been submitted. The site is entitled but unbuilt \u2014 raising questions about whether the medical facility was a condition of approval or an aspirational use. San Miguel County has long lacked adequate local medical infrastructure, making the timeline and operator commitment significant public interest questions.",
-    "deepDiveUrl": "https://livabletelluride.org/societyturnpud/",
-    "primarySourceUrl": "",
-    "lastUpdated": "2026-05-13",
-    "sourceConfidence": "Confirmed",
-    "editorialStatus": "Ready",
-    "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null,
-    "costNote": "PUD approved; no construction drawings submitted"
   }
 ]
