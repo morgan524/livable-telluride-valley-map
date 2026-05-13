@@ -196,34 +196,7 @@ body {
 }
 #map { width: 100%; height: 100%; }
 
-/* PRESET VIEW BUTTONS */
-#preset-buttons {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  justify-content: center;
-  z-index: 10;
-  max-width: 620px;
-  padding: 0 10px;
-}
-.preset-btn {
-  background: rgba(255,255,255,0.95);
-  border: 1px solid #d1d5db;
-  border-radius: 5px;
-  padding: 4px 9px;
-  font-size: 0.69rem;
-  font-weight: 500;
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  transition: all 0.15s;
-  white-space: nowrap;
-}
-.preset-btn:hover { border-color: var(--green-mid); color: var(--green-mid); }
-.preset-btn.active { background: var(--green-dark); color: white; border-color: var(--green-dark); }
+
 
 /* MAP MARKERS */
 .map-marker {

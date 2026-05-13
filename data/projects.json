@@ -250,15 +250,15 @@
     "id": "sunnyside-project",
     "name": "Sunnyside Housing Project",
     "shortName": "Sunnyside",
-    "location": "Telluride",
+    "location": "Sunnyside, Telluride",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
     "projectType": [
       "Housing"
     ],
     "status": "Under Review",
-    "latitude": 37.9451,
-    "longitude": -107.8087,
+    "latitude": 37.951411,
+    "longitude": -107.856537,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": null,
