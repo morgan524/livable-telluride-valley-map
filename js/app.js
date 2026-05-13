@@ -22,6 +22,7 @@ const STATUS_COLORS = {
   'Under Review':         '#ea580c', // orange
   'Approved':             '#16a34a', // green
   'Litigation':           '#7c3aed', // purple
+  'In Litigation':        '#7c3aed', // purple
   'Built':                '#6b7280', // gray
   'Public Infrastructure':'#2563eb', // blue
 };
@@ -32,6 +33,7 @@ const MASSING_COLORS = {
   'Under Review':         '#f0a202',
   'Approved':             '#2f7a5f',
   'Public Infrastructure':'#376980',
+  'In Litigation':        '#7c3aed',
   'Disputed':             '#6b4f87',
 };
 
@@ -332,7 +334,7 @@ function buildLegend() {
     ['Proposed',              STATUS_COLORS['Proposed'],             ''],
     ['Under Review',          STATUS_COLORS['Under Review'],         ''],
     ['Approved',              STATUS_COLORS['Approved'],             ''],
-    ['Litigation',            STATUS_COLORS['Litigation'],           ''],
+    ['In Litigation',         STATUS_COLORS['In Litigation'],        ''],
     ['Public Infrastructure', STATUS_COLORS['Public Infrastructure'],''],
     ['Built / Historical',    STATUS_COLORS['Built'],                ''],
   ];
