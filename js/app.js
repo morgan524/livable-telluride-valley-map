@@ -125,12 +125,45 @@ function loadMassingLayer() {
         'Disputed',              '#6b4f87',
         '#888888',
       ],
-      'fill-extrusion-height': ['*', ['coalesce', ['get', 'height_m'], 20], 10],
+      // Zoom-scaled height: 4× exaggeration at overview zoom 12, true height at zoom 17+
+      'fill-extrusion-height': [
+        'interpolate', ['exponential', 2], ['zoom'],
+        12, ['*', ['coalesce', ['get', 'height_m'], 20], 4],
+        15, ['*', ['coalesce', ['get', 'height_m'], 20], 1.5],
+        17, ['coalesce', ['get', 'height_m'], 20],
+        22, ['coalesce', ['get', 'height_m'], 20],
+      ],
       'fill-extrusion-base':   0,
-      'fill-extrusion-opacity': 0.75,
+      'fill-extrusion-opacity': 0.82,
       'fill-extrusion-vertical-gradient': true,
     },
   });
+
+  // Add existing-buildings layer for context (gray, from Mapbox/OSM building tiles)
+  // Renders only at zoom ≥ 15 so it doesn't clutter the overview
+  map.addLayer({
+    id: 'existing-buildings-3d',
+    type: 'fill-extrusion',
+    source: 'composite',
+    'source-layer': 'building',
+    filter: ['==', 'extrude', 'true'],
+    minzoom: 15,
+    layout: { visibility: 'none' },
+    paint: {
+      'fill-extrusion-color': '#c8c0b4',
+      'fill-extrusion-height': [
+        'interpolate', ['linear'], ['zoom'],
+        15, 0,
+        15.5, ['coalesce', ['get', 'height'], 6],
+      ],
+      'fill-extrusion-base': [
+        'interpolate', ['linear'], ['zoom'],
+        15, 0,
+        15.5, ['coalesce', ['get', 'min_height'], 0],
+      ],
+      'fill-extrusion-opacity': 0.55,
+    },
+  }, 'proposed-massing-layer'); // render existing buildings BEHIND proposed massing
 
   massingLoaded = true;
 
@@ -161,6 +194,7 @@ function loadMassingLayer() {
     toggle.addEventListener('change', e => {
       const visible = e.target.checked;
       map.setLayoutProperty('proposed-massing-layer', 'visibility', visible ? 'visible' : 'none');
+      map.setLayoutProperty('existing-buildings-3d', 'visibility', visible ? 'visible' : 'none');
       // When enabling, fly to the main Telluride–MV corridor zoomed in enough to see blocks
       map.easeTo({
         ...(visible ? { center: [-107.843, 37.938], zoom: 13.5 } : {}),
@@ -440,6 +474,7 @@ function openDrawer(project) {
   });
   if (massingLoaded) {
     map.setLayoutProperty('proposed-massing-layer', 'visibility', 'visible');
+    map.setLayoutProperty('existing-buildings-3d', 'visibility', 'visible');
     map.setFilter('proposed-massing-layer', ['==', ['get', 'project_id'], project.id]);
     const toggle = document.getElementById('toggleMassing');
     if (toggle) toggle.checked = true;
@@ -566,6 +601,7 @@ function closeDrawer() {
   map.easeTo({ pitch: 0, bearing: 0, duration: 700 });
   if (massingLoaded) {
     map.setLayoutProperty('proposed-massing-layer', 'visibility', 'none');
+    map.setLayoutProperty('existing-buildings-3d', 'visibility', 'none');
     map.setFilter('proposed-massing-layer', null);
     const toggle = document.getElementById('toggleMassing');
     if (toggle) toggle.checked = false;
