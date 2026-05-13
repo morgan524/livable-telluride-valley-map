@@ -381,6 +381,7 @@ function applyFilters() {
     return true;
   });
 
+  filteredProjects.sort((a,b)=>a.name.localeCompare(b.name));
   renderProjectList();
   renderMarkers();
   updateMassingFilter();
@@ -494,12 +495,13 @@ function openDrawer(project) {
     if (project.squareFootage)     parts.push(`<div class="stat"><span>${(project.squareFootage/1000).toFixed(0)}K</span>sq ft</div>`);
     if (project.hotelRooms)        parts.push(`<div class="stat"><span>${project.hotelRooms}</span>hotel rooms</div>`);
     if (project.housingUnits)      parts.push(`<div class="stat"><span>${project.housingUnits}</span>units</div>`);
-    if (project.estimatedEmployees)parts.push(`<div class="stat"><span>${project.estimatedEmployees.toLocaleString()}</span>employees</div>`);
+    if (project.estimatedEmployees)parts.push(`<div class="stat"><span>${project.estimatedEmployees.toLocaleString()}</span>est. employees*</div>`);
     if (project.publicDebtSubsidy) parts.push(`<div class="stat"><span>$${(project.publicDebtSubsidy/1e6).toFixed(1)}M</span>public debt</div>`);
     if (project.parkingSpaces)     parts.push(`<div class="stat"><span>${project.parkingSpaces.toLocaleString()}</span>parking spaces</div>`);
     if (project.estimatedTotalCost) parts.push(`<div class="stat"><span>${project.estimatedTotalCost>=1e9?'$'+(project.estimatedTotalCost/1e9).toFixed(project.estimatedTotalCost%1e9===0?0:1)+'B':'$'+(project.estimatedTotalCost/1e6).toFixed(1)+'M'}</span>est. total cost</div>`);
     if (project.estimatedCostPerUnit) parts.push(`<div class="stat"><span>${project.estimatedCostPerUnit>=1e6?'$'+(project.estimatedCostPerUnit/1e6).toFixed(1)+'M':'$'+(project.estimatedCostPerUnit/1000).toFixed(0)+'K'}</span>est. cost/unit</div>`);
-    return parts.length ? `<div class="drawer-section"><div class="drawer-label">Key Numbers</div><div class="drawer-stats-grid">${parts.join('')}</div></div>` : '';
+    const footnote = parts.some(s=>s.includes('est. employees*')) ? '<div style="font-size:0.68rem;color:#6b7280;margin-top:4px">* Estimated based on comparable Four Seasons properties; no headcount published in SPUD application.</div>' : '';
+    return parts.length ? `<div class="drawer-section"><div class="drawer-label">Key Numbers</div><div class="drawer-stats-grid">${parts.join('')}</div>${footnote}</div>` : '';
   })();
 
   const datesHtml = (() => {
