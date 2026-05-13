@@ -442,7 +442,7 @@
     "projectType": ["Housing", "Commercial", "Land Use"],
     "status": "Under Review",
     "latitude": 37.9370,
-    "longitude": -107.8194,
+    "longitude": -107.8195,
     "geometryType": "point",
     "squareFootage": null,
     "housingUnits": null,
