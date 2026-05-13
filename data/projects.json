@@ -34,7 +34,8 @@
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Ready",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "smart-gondola-3a",
@@ -69,7 +70,8 @@
     "sourceConfidence": "Estimated",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": 40000000,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": "Confirmed — $40M public bond authorization (Measure 3A); full project cost not publicly disclosed."
   },
   {
     "id": "voodoo-affordable-housing",
@@ -104,7 +106,8 @@
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Ready",
     "estimatedTotalCost": 27400000,
-    "estimatedCostPerUnit": 1015000
+    "estimatedCostPerUnit": 1015000,
+    "costNote": "Confirmed — $27.4M public financing per Town debt records. 27 units / $1,015,000 per unit."
   },
   {
     "id": "chair-7-open-space",
@@ -140,7 +143,8 @@
     "sourceConfidence": "Estimated",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "four-seasons-mountain-village",
@@ -183,7 +187,8 @@
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Ready",
     "estimatedTotalCost": 1000000000,
-    "estimatedCostPerUnit": 19231000
+    "estimatedCostPerUnit": 19231000,
+    "costNote": "Confirmed — $1B announced project cost per developer/media; $417.5M construction loan. 52 hotel rooms / $19,231,000 per room."
   },
   {
     "id": "six-senses-mountain-village",
@@ -223,7 +228,8 @@
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": 285000000,
-    "estimatedCostPerUnit": 3701000
+    "estimatedCostPerUnit": 3701000,
+    "costNote": "Confirmed — $285M announced project cost per developer/media. 77 hotel rooms / $3,701,000 per room."
   },
   {
     "id": "aldasoro-pud",
@@ -258,7 +264,8 @@
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "shandoka-lot-l",
@@ -292,7 +299,8 @@
     "sourceConfidence": "Estimated",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "sunnyside-project",
@@ -326,7 +334,8 @@
     "sourceConfidence": "Estimated",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "hospital-district-society-turn",
@@ -361,7 +370,8 @@
     "sourceConfidence": "Estimated",
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "carhenge-lot",
@@ -423,8 +433,9 @@
     "lastUpdated": "2026-05-13",
     "sourceConfidence": "Confirmed",
     "editorialStatus": "Ready",
-    "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedTotalCost": 198817800,
+    "estimatedCostPerUnit": 864000,
+    "costNote": "Estimate — based on Canyonlands/Tower House comparable ($867/SF all-in ex-land) applied to 213,400 SF above-grade program (sum of Buildings A–F per Exhibit C site plan), plus 230 underground parking spaces × $60,000/space. Town-owned land ($0 acquisition). 230 units / $864,000 per unit."
   },
   {
     "id": "norwood-wrights-mesa-housing",
@@ -459,7 +470,8 @@
     "sourceConfidence": "Unknown",
     "editorialStatus": "Needs Source",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "west-end-economic-development",
@@ -494,7 +506,8 @@
     "sourceConfidence": "Unknown",
     "editorialStatus": "Needs Source",
     "estimatedTotalCost": null,
-    "estimatedCostPerUnit": null
+    "estimatedCostPerUnit": null,
+    "costNote": null
   },
   {
     "id": "canyonlands-tower-house",
@@ -538,6 +551,7 @@
     "editorialStatus": "Ready",
     "secondarySourceUrl": "https://livabletelluride.org/canyonlands-development-a-closer-look-at-telluride-s-financing/",
     "estimatedTotalCost": 35080000,
-    "estimatedCostPerUnit": 877000
+    "estimatedCostPerUnit": 877000,
+    "costNote": "Estimate — $3M land + $26M construction loan + $4.7M soft costs (18%) + $1.4M water/sewer tap fee waivers (~35 taps × $40K). 40 units / $877,000 per unit."
   }
 ]
