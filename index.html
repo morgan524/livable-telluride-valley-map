@@ -108,10 +108,25 @@
     <!-- Preset View Buttons -->
     <div id="preset-buttons"></div>
 
+    <!-- 3D Massing Toggle -->
+    <div id="massing-toggle-bar">
+      <label class="massing-toggle-label">
+        <input type="checkbox" id="toggleMassing">
+        <span class="massing-toggle-icon">🏗</span>
+        Show 3D proposed massing
+      </label>
+      <div id="massing-disclaimer">
+        Approximate massing — not architectural plans. See source confidence in each project.
+      </div>
+    </div>
+
     <!-- Legend -->
     <div id="legend">
       <h4>Pin Status</h4>
       <div id="legend-items"></div>
+      <div id="massing-legend-section" style="display:none">
+        <h4 style="margin-top:10px;margin-bottom:4px;font-size:0.7rem;text-transform:uppercase;letter-spacing:.05em;color:#64748b">3D Massing</h4>
+      </div>
     </div>
 
     <!-- Right Drawer (populated by JS) -->

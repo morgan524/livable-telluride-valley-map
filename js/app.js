@@ -26,6 +26,15 @@ const STATUS_COLORS = {
   'Public Infrastructure':'#2563eb', // blue
 };
 
+// ─── 3D massing colors by status ─────────────────────────────────────────────
+const MASSING_COLORS = {
+  'Proposed':             '#d95f02',
+  'Under Review':         '#f0a202',
+  'Approved':             '#2f7a5f',
+  'Public Infrastructure':'#376980',
+  'Disputed':             '#6b4f87',
+};
+
 // ─── State ────────────────────────────────────────────────────────────────────
 let allProjects      = [];
 let filteredProjects = [];
@@ -33,6 +42,7 @@ let activeFilters    = { search: '', type: null, status: null, communityArea: nu
 let map;
 let markers          = []; // { mapMarker, el, project }
 let activeProject    = null;
+let massingLoaded    = false;
 
 // ─── Bootstrap ───────────────────────────────────────────────────────────────
 async function init() {
@@ -43,7 +53,7 @@ async function init() {
     center: PRESET_VIEWS[0].center,
     zoom:   PRESET_VIEWS[0].zoom,
   });
-  map.addControl(new mapboxgl.NavigationControl({ visualizePitch: false }), 'bottom-right');
+  map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), 'bottom-right');
 
   // Load data
   try {
@@ -68,10 +78,155 @@ async function init() {
     applyFilters();
   });
 
-  // Close drawer on map click (not on marker)
-  map.on('click', () => {
-    if (activeProject) closeDrawer();
+  // Close drawer on map click (not on marker or massing)
+  map.on('click', e => {
+    const massingFeatures = map.queryRenderedFeatures(e.point, { layers: ['proposed-massing-layer'] });
+    if (massingFeatures.length === 0 && activeProject) closeDrawer();
   });
+
+  // Load 3D massing after style is fully ready
+  map.on('load', () => {
+    loadMassingLayer();
+  });
+}
+
+// ─── 3D Massing layer ─────────────────────────────────────────────────────────
+function loadMassingLayer() {
+  // Add GeoJSON source
+  map.addSource('proposed-massing', {
+    type: 'geojson',
+    data: 'data/proposed-massing.geojson',
+  });
+
+  // Add fill-extrusion layer (hidden by default)
+  map.addLayer({
+    id: 'proposed-massing-layer',
+    type: 'fill-extrusion',
+    source: 'proposed-massing',
+    layout: {
+      visibility: 'none',
+    },
+    paint: {
+      'fill-extrusion-color': [
+        'match',
+        ['get', 'status'],
+        'Proposed',              '#d95f02',
+        'Under Review',          '#f0a202',
+        'Approved',              '#2f7a5f',
+        'Public Infrastructure', '#376980',
+        'Disputed',              '#6b4f87',
+        '#888888',
+      ],
+      'fill-extrusion-height': ['get', 'height_m'],
+      'fill-extrusion-base':   ['coalesce', ['get', 'base_m'], 0],
+      'fill-extrusion-opacity': [
+        'case',
+        ['==', ['get', 'source_confidence'], 'Confirmed'], 0.82,
+        ['==', ['get', 'source_confidence'], 'Estimated'], 0.62,
+        ['==', ['get', 'source_confidence'], 'Disputed'],  0.42,
+        0.50,
+      ],
+      'fill-extrusion-vertical-gradient': true,
+    },
+  });
+
+  massingLoaded = true;
+
+  // Click on a massing block → open project drawer
+  map.on('click', 'proposed-massing-layer', e => {
+    const props = e.features[0].properties;
+    const project = allProjects.find(p => p.id === props.project_id);
+    if (project) {
+      openDrawer(project);
+    } else {
+      // Fallback: open drawer using massing properties directly
+      openMassingDrawer(props);
+    }
+    e.originalEvent.stopPropagation();
+  });
+
+  // Hover: pointer cursor
+  map.on('mouseenter', 'proposed-massing-layer', () => {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+  map.on('mouseleave', 'proposed-massing-layer', () => {
+    map.getCanvas().style.cursor = '';
+  });
+
+  // Wire toggle
+  const toggle = document.getElementById('toggleMassing');
+  if (toggle) {
+    toggle.addEventListener('change', e => {
+      const visible = e.target.checked;
+      map.setLayoutProperty('proposed-massing-layer', 'visibility', visible ? 'visible' : 'none');
+      map.easeTo({
+        pitch:    visible ? 58 : 0,
+        bearing:  visible ? -20 : 0,
+        duration: visible ? 900 : 700,
+      });
+
+      // Show/hide disclaimer
+      const disclaimer = document.getElementById('massing-disclaimer');
+      if (disclaimer) disclaimer.style.display = visible ? 'block' : 'none';
+
+      // Update massing legend visibility
+      const massingLegend = document.getElementById('massing-legend-section');
+      if (massingLegend) massingLegend.style.display = visible ? 'block' : 'none';
+    });
+  }
+}
+
+// Fallback drawer for massing blocks not linked to a project
+function openMassingDrawer(props) {
+  const drawer = document.getElementById('drawer');
+  const color  = MASSING_COLORS[props.status] || '#888888';
+
+  const confClass = 'confidence-' + (props.source_confidence || 'unknown').toLowerCase().replace(/[^a-z]/g, '-');
+
+  const statsHtml = (() => {
+    const parts = [];
+    if (props.sqft)        parts.push(`<div class="stat"><span>${(props.sqft/1000).toFixed(0)}K</span>sq ft</div>`);
+    if (props.hotel_rooms) parts.push(`<div class="stat"><span>${props.hotel_rooms}</span>hotel rooms</div>`);
+    if (props.housing_units) parts.push(`<div class="stat"><span>${props.housing_units}</span>units</div>`);
+    if (props.height_ft)   parts.push(`<div class="stat"><span>${props.height_ft} ft</span>approx height</div>`);
+    if (props.floors)      parts.push(`<div class="stat"><span>${props.floors}</span>floors</div>`);
+    return parts.length
+      ? `<div class="drawer-section"><div class="drawer-label">Approximate Scale</div><div class="drawer-stats-grid">${parts.join('')}</div></div>`
+      : '';
+  })();
+
+  const linksHtml = (() => {
+    const parts = [];
+    if (props.deep_dive_url)     parts.push(`<a href="${props.deep_dive_url}" target="_blank" rel="noopener" class="drawer-btn drawer-btn-primary">Deep Dive →</a>`);
+    if (props.primary_source_url) parts.push(`<a href="${props.primary_source_url}" target="_blank" rel="noopener" class="drawer-btn">Primary Source →</a>`);
+    return parts.join('');
+  })();
+
+  drawer.innerHTML = `
+    <div class="drawer-header" style="background:${color}">
+      <button class="drawer-close" onclick="closeDrawer()" title="Close">✕</button>
+      <div class="drawer-status-badge" style="outline:1px solid rgba(255,255,255,0.35)">${props.status}</div>
+      <h2 class="drawer-title">${props.name}</h2>
+      <div class="drawer-meta">${props.project_type}</div>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-section">
+        <div class="drawer-label">3D Massing Block</div>
+        <p style="font-size:0.8rem;color:#555;font-style:italic">This block shows the approximate physical scale of the proposed project. It is not an architectural rendering.</p>
+      </div>
+      ${statsHtml}
+      <div class="drawer-section">
+        <div class="drawer-label">Source Confidence</div>
+        <div class="confidence-badge ${confClass}">${props.source_confidence || 'Unknown'}</div>
+        ${props.source_note ? `<p style="font-size:0.72rem;color:#6b7280;margin-top:6px">${props.source_note}</p>` : ''}
+      </div>
+      ${linksHtml ? `<div class="drawer-links">${linksHtml}</div>` : ''}
+      <div class="drawer-footer">Last updated: ${props.last_updated || '—'}</div>
+    </div>
+  `;
+
+  activeProject = { id: props.project_id };
+  drawer.classList.add('open');
 }
 
 // ─── Preset buttons ──────────────────────────────────────────────────────────
@@ -135,7 +290,7 @@ function renderChips(containerId, values, filterKey) {
 function buildLegend() {
   const container = document.getElementById('legend-items');
   const entries = [
-    ['Proposed',              STATUS_COLORS['Proposed'],             'Red = Major pending decision'],
+    ['Proposed',              STATUS_COLORS['Proposed'],             ''],
     ['Under Review',          STATUS_COLORS['Under Review'],         ''],
     ['Approved',              STATUS_COLORS['Approved'],             ''],
     ['Litigation',            STATUS_COLORS['Litigation'],           ''],
@@ -148,6 +303,23 @@ function buildLegend() {
     item.innerHTML = `<div class="legend-dot" style="background:${color}"></div><span>${label}</span>`;
     container.appendChild(item);
   });
+
+  // Massing legend (hidden until toggle is on)
+  const massingSection = document.getElementById('massing-legend-section');
+  if (massingSection) {
+    const massingEntries = [
+      ['Proposed / Under Review', '#d95f02'],
+      ['Approved (not yet built)', '#2f7a5f'],
+      ['Public / Civic',          '#376980'],
+      ['Disputed',                '#6b4f87'],
+    ];
+    massingEntries.forEach(([label, color]) => {
+      const item = document.createElement('div');
+      item.className = 'legend-item';
+      item.innerHTML = `<div class="legend-block" style="background:${color}"></div><span>${label}</span>`;
+      massingSection.appendChild(item);
+    });
+  }
 }
 
 // ─── Filter & render ─────────────────────────────────────────────────────────
@@ -171,6 +343,24 @@ function applyFilters() {
   renderProjectList();
   renderMarkers();
   updateCounter();
+  updateMassingFilter();
+}
+
+// Update massing layer to match visible project IDs
+function updateMassingFilter() {
+  if (!massingLoaded) return;
+  const visibleIds = filteredProjects.map(p => p.id);
+  // If no filters active, show all massing; otherwise filter to matching project_ids
+  const hasActiveFilter = Object.values(activeFilters).some(v => v !== null && v !== '');
+  if (hasActiveFilter) {
+    map.setFilter('proposed-massing-layer', [
+      'in',
+      ['get', 'project_id'],
+      ['literal', visibleIds],
+    ]);
+  } else {
+    map.setFilter('proposed-massing-layer', null); // show all
+  }
 }
 
 // ─── Project list ─────────────────────────────────────────────────────────────

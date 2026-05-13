@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "society-turn-pud-massing",
+        "project_id": "society-turn-pud",
+        "name": "Society Turn PUD",
+        "status": "Under Review",
+        "project_type": "Medical / Commercial / Hotel",
+        "height_ft": 72,
+        "height_m": 21.95,
+        "base_m": 0,
+        "floors": 5,
+        "sqft": 400000,
+        "hotel_rooms": 125,
+        "housing_units": null,
+        "source_confidence": "Estimated",
+        "source_note": "Approximate block massing based on 400,000 sq ft PUD application summary and site area. Footprint and height are conceptual — final architectural plans have not been submitted.",
+        "deep_dive_url": "https://livabletelluride.org/societyturnpud/",
+        "primary_source_url": "",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8590, 37.9356],
+          [-107.8530, 37.9356],
+          [-107.8530, 37.9384],
+          [-107.8590, 37.9384],
+          [-107.8590, 37.9356]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "four-seasons-mv-massing",
+        "project_id": "four-seasons-mountain-village",
+        "name": "Four Seasons Resort & Residences Telluride",
+        "status": "Approved",
+        "project_type": "Hotel / Lodging",
+        "height_ft": 85,
+        "height_m": 25.91,
+        "base_m": 0,
+        "floors": 7,
+        "sqft": 350000,
+        "hotel_rooms": 52,
+        "housing_units": 10,
+        "source_confidence": "Estimated",
+        "source_note": "Approximate massing derived from 4.4-acre site area and public application materials. Exact footprint and height pending final architectural submittal. Construction started October 2025.",
+        "deep_dive_url": "https://livabletelluride.org/",
+        "primary_source_url": "https://coloradosun.com/2026/04/07/housing-four-seasons-mountain-village/",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8505, 37.9414],
+          [-107.8483, 37.9414],
+          [-107.8483, 37.9426],
+          [-107.8505, 37.9426],
+          [-107.8505, 37.9414]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "six-senses-mv-massing",
+        "project_id": "six-senses-mountain-village",
+        "name": "Six Senses Telluride",
+        "status": "Approved",
+        "project_type": "Hotel / Lodging",
+        "height_ft": 72,
+        "height_m": 21.95,
+        "base_m": 0,
+        "floors": 6,
+        "sqft": 180000,
+        "hotel_rooms": 77,
+        "housing_units": 56,
+        "source_confidence": "Estimated",
+        "source_note": "Approximate massing based on 77-room hotel + 24 residences + 56-unit employee housing complex. Footprint conceptually derived from development area in public press releases and planning filings.",
+        "deep_dive_url": "https://livabletelluride.org/",
+        "primary_source_url": "https://www.telluridenews.com/",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8523, 37.9400],
+          [-107.8506, 37.9400],
+          [-107.8506, 37.9412],
+          [-107.8523, 37.9412],
+          [-107.8523, 37.9400]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "voodoo-housing-massing",
+        "project_id": "voodoo-employee-housing",
+        "name": "VooDoo Employee Housing",
+        "status": "Proposed",
+        "project_type": "Housing",
+        "height_ft": 45,
+        "height_m": 13.72,
+        "base_m": 0,
+        "floors": 4,
+        "sqft": 85000,
+        "hotel_rooms": null,
+        "housing_units": 110,
+        "source_confidence": "Estimated",
+        "source_note": "Approximate block massing based on proposed 110-unit affordable housing concept. Site and building form not yet confirmed in final application.",
+        "deep_dive_url": "https://livabletelluride.org/the-voodoo-project/",
+        "primary_source_url": "",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8128, 37.9396],
+          [-107.8108, 37.9396],
+          [-107.8108, 37.9408],
+          [-107.8128, 37.9408],
+          [-107.8128, 37.9396]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chair-7-massing",
+        "project_id": "chair-7-redevelopment",
+        "name": "Chair 7 Redevelopment Area",
+        "status": "Proposed",
+        "project_type": "Commercial / Hotel / Land Use",
+        "height_ft": 60,
+        "height_m": 18.29,
+        "base_m": 0,
+        "floors": 5,
+        "sqft": 120000,
+        "hotel_rooms": 80,
+        "housing_units": null,
+        "source_confidence": "Unknown",
+        "source_note": "Placeholder massing only. Chair 7 redevelopment concept has been discussed publicly but no formal application or site plan has been filed. Height and footprint are speculative.",
+        "deep_dive_url": "https://livabletelluride.org/the-chair-7-development-controversy/",
+        "primary_source_url": "",
+        "last_updated": "2026-05-13"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-107.8535, 37.9438],
+          [-107.8515, 37.9438],
+          [-107.8515, 37.9450],
+          [-107.8535, 37.9450],
+          [-107.8535, 37.9438]
+        ]]
+      }
+    }
+  ]
+}
