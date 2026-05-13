@@ -26,8 +26,8 @@
     "decisionBody": "BOCC",
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
-    "keyQuestion": "Should a 400,000 sq ft medical campus and hotel at Society Turn \u2014 the largest development ever proposed in San Miguel County \u2014 be evaluated for its cumulative regional impact before approval?",
-    "whyItMatters": "At 400,000 sq ft, the Society Turn PUD would be the largest single development in county history. Combined with the nearby Four Seasons, it would bring an estimated 1,058 new employees to an already capacity-constrained region \u2014 with no identified housing plan for those workers.",
+    "keyQuestion": "Should a 400,000 sq ft medical campus and hotel at Society Turn — the largest development ever proposed in San Miguel County — be evaluated for its cumulative regional impact before approval?",
+    "whyItMatters": "At 400,000 sq ft, the Society Turn PUD would be the largest single development in county history. Combined with the nearby Four Seasons, it would bring an estimated 1,058 new employees to an already capacity-constrained region — with no identified housing plan for those workers.",
     "deepDiveUrl": "https://livabletelluride.org/societyturnpud/",
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
@@ -63,7 +63,7 @@
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
     "keyQuestion": "Is the gondola capital program appropriately scoped and financed, and what is the true cost of long-term operations and debt service to regional taxpayers?",
-    "whyItMatters": "SMART's gondola program carries an estimated $40M in public debt. Measure 3A was a ballot issue asking voters to authorize additional bonding. The gondola is the primary public transit link between Telluride and Mountain Village \u2014 its financing and governance affect every resident and visitor in the region.",
+    "whyItMatters": "SMART's gondola program carries an estimated $40M in public debt. Measure 3A was a ballot issue asking voters to authorize additional bonding. The gondola is the primary public transit link between Telluride and Mountain Village — its financing and governance affect every resident and visitor in the region.",
     "deepDiveUrl": "https://livabletelluride.org/the-gondola-station/",
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
@@ -71,7 +71,7 @@
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": 40000000,
     "estimatedCostPerUnit": null,
-    "costNote": "Confirmed \u2014 $40M public bond authorization (Measure 3A); full project cost not publicly disclosed."
+    "costNote": "Confirmed — $40M public bond authorization (Measure 3A); full project cost not publicly disclosed."
   },
   {
     "id": "voodoo-affordable-housing",
@@ -98,7 +98,7 @@
     "decisionBody": "Telluride Town Council / THA",
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
-    "keyQuestion": "With a $23M balloon payment due around 2032, how does the Town plan to refinance or repay the VooDoo project debt \u2014 and what happens if market conditions don't cooperate?",
+    "keyQuestion": "With a $23M balloon payment due around 2032, how does the Town plan to refinance or repay the VooDoo project debt — and what happens if market conditions don't cooperate?",
     "whyItMatters": "VooDoo is a 27-unit affordable housing project financed with approximately $27.4 million in public funds. A balloon payment of roughly $23 million comes due around 2032. The project demonstrates both the community's commitment to workforce housing and the fiscal risks of the financing model used.",
     "deepDiveUrl": "https://livabletelluride.org/the-voodoo-project/",
     "primarySourceUrl": "",
@@ -107,7 +107,10 @@
     "editorialStatus": "Ready",
     "estimatedTotalCost": 27400000,
     "estimatedCostPerUnit": 1015000,
-    "costNote": "Confirmed \u2014 $27.4M public financing per Town debt records. 27 units / $1,015,000 per unit."
+    "costNote": "Confirmed — $27.4M public financing per Town debt records. 27 units / $1,015,000 per unit.",
+    "balloonPayment": 23000000,
+    "balloonDate": "~2032",
+    "balloonNote": "~$23M balloon payment due approximately 2032. The Town has not publicly disclosed a confirmed refinancing or repayment plan. If market conditions are unfavorable, the Town may need to refinance at higher rates or tap general fund reserves."
   },
   {
     "id": "chair-7-open-space",
@@ -178,8 +181,8 @@
     "estimatedCompletion": "2028",
     "projectCost": 1000000000,
     "constructionLoan": 417500000,
-    "keyQuestion": "The Four Seasons is housing hundreds of construction workers in Naturita, Ridgway, and the West End \u2014 communities that say they 'already operate at full capacity.' Who pays when the burdens fall down-valley but the benefits flow inward to Mountain Village?",
-    "whyItMatters": "The $1 billion Four Seasons broke ground October 2025 and is under active construction \u2014 36 months, finishing ~2028. It has 52 hotel rooms, 43 hotel residences, 26 private residences (priced $4M\u2013$35M at $5,500/sq ft), and only 10 employee apartments for an operation that will require hundreds of permanent staff. Construction is already forcing workers into Naturita (42-room Rimrock Hotel, purchased by developer), Camp V, and Ridgway \u2014 where the Town of Ridgway filed a lawsuit in March 2026 against the MTN Lodge for housing workers in a commercially-zoned hotel. Norwood Mayor Candy Meehan called it 'saturation at an unprecedented level.' A coalition of West End leaders sent a letter in July 2025 demanding a 'community benefit agreement,' saying the resort's benefits 'flow inward' while the burdens fall on communities 'who anticipate few, if any, long-term benefits.' The developer made a $2.5M contribution toward Telluride affordable housing \u2014 a fraction of the $580M in financing.",
+    "keyQuestion": "The Four Seasons is housing hundreds of construction workers in Naturita, Ridgway, and the West End — communities that say they 'already operate at full capacity.' Who pays when the burdens fall down-valley but the benefits flow inward to Mountain Village?",
+    "whyItMatters": "The $1 billion Four Seasons broke ground October 2025 and is under active construction — 36 months, finishing ~2028. It has 52 hotel rooms, 43 hotel residences, 26 private residences (priced $4M–$35M at $5,500/sq ft), and only 10 employee apartments for an operation that will require hundreds of permanent staff. Construction is already forcing workers into Naturita (42-room Rimrock Hotel, purchased by developer), Camp V, and Ridgway — where the Town of Ridgway filed a lawsuit in March 2026 against the MTN Lodge for housing workers in a commercially-zoned hotel. Norwood Mayor Candy Meehan called it 'saturation at an unprecedented level.' A coalition of West End leaders sent a letter in July 2025 demanding a 'community benefit agreement,' saying the resort's benefits 'flow inward' while the burdens fall on communities 'who anticipate few, if any, long-term benefits.' The developer made a $2.5M contribution toward Telluride affordable housing — a fraction of the $580M in financing.",
     "deepDiveUrl": "",
     "primarySourceUrl": "https://coloradosun.com/2026/04/07/housing-four-seasons-mountain-village/",
     "secondarySourceUrl": "https://press.fourseasons.com/news-releases/2025/new-four-seasons-in-telluride/",
@@ -188,7 +191,7 @@
     "editorialStatus": "Ready",
     "estimatedTotalCost": 1000000000,
     "estimatedCostPerUnit": 19231000,
-    "costNote": "Confirmed \u2014 $1B announced project cost per developer/media; $417.5M construction loan. 52 hotel rooms / $19,231,000 per room."
+    "costNote": "Confirmed — $1B announced project cost per developer/media; $417.5M construction loan. 52 hotel rooms / $19,231,000 per room."
   },
   {
     "id": "six-senses-mountain-village",
@@ -219,8 +222,8 @@
     "publicCommentDeadline": null,
     "estimatedCompletion": "2028",
     "projectCost": 285000000,
-    "keyQuestion": "Six Senses houses 56 employees on-site \u2014 the most workforce housing per square foot of any hotel in North America, developers claim. But a 77-room luxury resort will employ far more than 56 people. Where do the rest live, and what does that mean for a region already at capacity?",
-    "whyItMatters": "Six Senses Telluride is a $285 million, 77-room luxury resort being developed on the last large hotel site in Mountain Village, approved by Mountain Village Town Council and targeting a 2028 opening. It is the first Six Senses property in the U.S. and IHG's first luxury mountain resort in North America's Mountain West. The project dedicates 14,000\u201315,000 sq ft to employee housing for 56 staff \u2014 which developers describe as the most workforce housing per square foot of any hotel in North America. But a 77-room full-service luxury resort with rooftop pool, Omakase dining, speakeasy bar, spa, and 24 residences will require substantially more than 56 operational employees. Viewed alongside the Four Seasons (52 rooms, opening same year), this is 129 new luxury hotel rooms added to Mountain Village in one construction cycle \u2014 all drawing from the same regional workforce with no regional housing plan to match.",
+    "keyQuestion": "Six Senses houses 56 employees on-site — the most workforce housing per square foot of any hotel in North America, developers claim. But a 77-room luxury resort will employ far more than 56 people. Where do the rest live, and what does that mean for a region already at capacity?",
+    "whyItMatters": "Six Senses Telluride is a $285 million, 77-room luxury resort being developed on the last large hotel site in Mountain Village, approved by Mountain Village Town Council and targeting a 2028 opening. It is the first Six Senses property in the U.S. and IHG's first luxury mountain resort in North America's Mountain West. The project dedicates 14,000–15,000 sq ft to employee housing for 56 staff — which developers describe as the most workforce housing per square foot of any hotel in North America. But a 77-room full-service luxury resort with rooftop pool, Omakase dining, speakeasy bar, spa, and 24 residences will require substantially more than 56 operational employees. Viewed alongside the Four Seasons (52 rooms, opening same year), this is 129 new luxury hotel rooms added to Mountain Village in one construction cycle — all drawing from the same regional workforce with no regional housing plan to match.",
     "deepDiveUrl": "",
     "primarySourceUrl": "https://www.telluridenews.com/news/article_ab9974f8-7c53-11ef-8fa0-ebbe9e0576bc.html",
     "secondarySourceUrl": "https://www.sixsenses.com/en/corporate/media-center/press-releases/2024/six-senses-telluride-announcement/",
@@ -229,7 +232,7 @@
     "editorialStatus": "Needs Review",
     "estimatedTotalCost": 285000000,
     "estimatedCostPerUnit": 3701000,
-    "costNote": "Confirmed \u2014 $285M announced project cost per developer/media. 77 hotel rooms / $3,701,000 per room."
+    "costNote": "Confirmed — $285M announced project cost per developer/media. 77 hotel rooms / $3,701,000 per room."
   },
   {
     "id": "aldasoro-pud",
@@ -257,7 +260,7 @@
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
     "keyQuestion": "Is the county enforcing the conditions of the Aldasoro PUD, and what does the Diamond Ranch litigation reveal about how San Miguel County oversees approved PUD conditions long-term?",
-    "whyItMatters": "Case 2023CV30044 involves enforcement of the Aldasoro PUD in Diamond Ranch. The case raises broader questions about how San Miguel County oversees approved planned unit developments over time \u2014 and what happens when conditions aren't enforced.",
+    "whyItMatters": "Case 2023CV30044 involves enforcement of the Aldasoro PUD in Diamond Ranch. The case raises broader questions about how San Miguel County oversees approved planned unit developments over time — and what happens when conditions aren't enforced.",
     "deepDiveUrl": "",
     "primarySourceUrl": "https://www.courts.state.co.us/",
     "lastUpdated": "2026-05-13",
@@ -291,8 +294,8 @@
     "decisionBody": "Telluride Town Council / Planning & Zoning Commission",
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
-    "keyQuestion": "Can the Town afford to build 900 public parking spaces AND 60 affordable housing units on Lot L \u2014 and what is the true cost to taxpayers?",
-    "whyItMatters": "Shandoka Lot L is the Town's best near-term opportunity to replace parking displaced by the Carhenge redevelopment AND add deeply affordable workforce housing in one project. The PUD process, high groundwater, and San Miguel River constraints make construction unusually complex and expensive. How the Town finances it \u2014 and who bears the cost \u2014 is a central public policy question.",
+    "keyQuestion": "Can the Town afford to build 900 public parking spaces AND 60 affordable housing units on Lot L — and what is the true cost to taxpayers?",
+    "whyItMatters": "Shandoka Lot L is the Town's best near-term opportunity to replace parking displaced by the Carhenge redevelopment AND add deeply affordable workforce housing in one project. The PUD process, high groundwater, and San Miguel River constraints make construction unusually complex and expensive. How the Town finances it — and who bears the cost — is a central public policy question.",
     "deepDiveUrl": "https://livabletelluride.org/empowering-telluride-the-future-of-lot-l-development/",
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
@@ -339,7 +342,7 @@
   },
   {
     "id": "hospital-district-society-turn",
-    "name": "Hospital District / Medical Facility \u2014 Society Turn Context",
+    "name": "Hospital District / Medical Facility — Society Turn Context",
     "shortName": "Hospital District",
     "location": "Society Turn / Lawson Hill area",
     "communityArea": "East End",
@@ -377,7 +380,7 @@
     "id": "carhenge-lot",
     "name": "Carhenge Lot Redevelopment",
     "shortName": "Carhenge",
-    "location": "SW Telluride \u2014 surface parking lot near Lift 7",
+    "location": "SW Telluride — surface parking lot near Lift 7",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
     "projectType": [
@@ -414,19 +417,19 @@
     ],
     "documents": [
       {
-        "title": "HARC Work Session \u2014 May 5, 2026",
+        "title": "HARC Work Session — May 5, 2026",
         "url": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
         "date": "2026-05-05",
         "size": "27 MB"
       },
       {
-        "title": "P&Z Work Session Application \u2014 March 26, 2026",
+        "title": "P&Z Work Session Application — March 26, 2026",
         "url": "https://engagetelluride.org/32089/widgets/113355/documents/79175",
         "date": "2026-03-26",
         "size": "20 MB"
       }
     ],
-    "keyQuestion": "The Town of Telluride is proposing to redevelop the Carhenge parking lot \u2014 Town-owned land at the base of Lift 7 \u2014 into a mixed-use housing and commercial neighborhood. What is the cost, who benefits, and what say does the public have before it's built?",
+    "keyQuestion": "The Town of Telluride is proposing to redevelop the Carhenge parking lot — Town-owned land at the base of Lift 7 — into a mixed-use housing and commercial neighborhood. What is the cost, who benefits, and what say does the public have before it's built?",
     "whyItMatters": "The Carhenge site (Lots 34 and 34B) is a Town-owned surface parking lot in southwest Telluride. The Town and Design Workshop are advancing a concept for mixed-use housing, underground parking, and community-serving commercial uses through a full entitlement gauntlet: HARC design review, PUD, Subdivision, and Large Scale Activity applications. As of May 2026 the project is in HARC work session review, with a broader public hearing process ahead. This is one of the last large, Town-owned development sites in Telluride proper.",
     "deepDiveUrl": "https://engagetelluride.org/carhenge-lot-redevelopment-project",
     "primarySourceUrl": "https://engagetelluride.org/32089/widgets/113355/documents/80980",
@@ -435,7 +438,7 @@
     "editorialStatus": "Ready",
     "estimatedTotalCost": 198817800,
     "estimatedCostPerUnit": 864000,
-    "costNote": "Estimate \u2014 based on Canyonlands/Tower House comparable ($867/SF all-in ex-land) applied to 213,400 SF above-grade program (sum of Buildings A\u2013F per Exhibit C site plan), plus 230 underground parking spaces \u00d7 $60,000/space. Town-owned land ($0 acquisition). 230 units / $864,000 per unit."
+    "costNote": "Estimate — based on Canyonlands/Tower House comparable ($867/SF all-in ex-land) applied to 213,400 SF above-grade program (sum of Buildings A–F per Exhibit C site plan), plus 230 underground parking spaces × $60,000/space. Town-owned land ($0 acquisition). 230 units / $864,000 per unit."
   },
   {
     "id": "norwood-wrights-mesa-housing",
@@ -463,7 +466,7 @@
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
     "keyQuestion": "Are housing and infrastructure investments in Norwood and Wright's Mesa keeping pace with population pressures from Telluride-area workers priced out of the east end?",
-    "whyItMatters": "Norwood and Wright's Mesa serve as the agricultural and working-class heart of San Miguel County. Workers priced out of Telluride increasingly commute from this area \u2014 25+ miles each way. Housing and infrastructure decisions here shape whether down-valley communities remain economically viable.",
+    "whyItMatters": "Norwood and Wright's Mesa serve as the agricultural and working-class heart of San Miguel County. Workers priced out of Telluride increasingly commute from this area — 25+ miles each way. Housing and infrastructure decisions here shape whether down-valley communities remain economically viable.",
     "deepDiveUrl": "",
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
@@ -499,7 +502,7 @@
     "nextMeetingDate": null,
     "publicCommentDeadline": null,
     "keyQuestion": "As the West End transitions away from coal and uranium extraction, what public investments and civic infrastructure are being planned to support economic diversification and long-term community stability?",
-    "whyItMatters": "The Nucla-Naturita corridor represents the West End of San Miguel County \u2014 a community in economic transition after the decline of extraction industries. Major civic and infrastructure decisions in this area will determine whether these communities stabilize or decline, affecting the county's fiscal balance and regional identity.",
+    "whyItMatters": "The Nucla-Naturita corridor represents the West End of San Miguel County — a community in economic transition after the decline of extraction industries. Major civic and infrastructure decisions in this area will determine whether these communities stabilize or decline, affecting the county's fiscal balance and regional identity.",
     "deepDiveUrl": "",
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
@@ -513,7 +516,7 @@
     "id": "canyonlands-tower-house",
     "name": "Canyonlands / Tower House Affordable Housing",
     "shortName": "Canyonlands",
-    "location": "West Telluride \u2014 near Clark's Market, Colorado Ave corridor",
+    "location": "West Telluride — near Clark's Market, Colorado Ave corridor",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
     "projectType": [
@@ -536,14 +539,14 @@
     "publicCommentDeadline": null,
     "documents": [
       {
-        "title": "Canyonlands / Tower House Community Presentation \u2014 June 2023",
+        "title": "Canyonlands / Tower House Community Presentation — June 2023",
         "url": "",
         "date": "2023-06-01",
         "size": ""
       }
     ],
     "keyQuestion": "The Town of Telluride acquired two parcels near Clark's Market (Tower House in 2018, Canyonlands in 2021) specifically for affordable housing. What will be built, at what cost, and who will it serve?",
-    "whyItMatters": "These two Town-owned parcels \u2014 0.33 AC Tower House and 0.20 AC Canyonlands \u2014 represent some of the last infill land in west Telluride purchased specifically for affordable housing. The 2023 program called for 35\u201345 units, ~85% deed-restricted at 80\u2013150% AMI, with a mix of rental and for-sale units. Construction is now underway (basement level as of May 2026). The San Miguel County Housing Needs Assessment estimated a shortfall of 800+ units by 2026 \u2014 this project is one of the Town's direct responses.",
+    "whyItMatters": "These two Town-owned parcels — 0.33 AC Tower House and 0.20 AC Canyonlands — represent some of the last infill land in west Telluride purchased specifically for affordable housing. The 2023 program called for 35–45 units, ~85% deed-restricted at 80–150% AMI, with a mix of rental and for-sale units. Construction is now underway (basement level as of May 2026).",
     "deepDiveUrl": "https://livabletelluride.org/from-36-million-to-103-million-how-telluride-became-richer-than-a-lottery-winner/",
     "primarySourceUrl": "",
     "lastUpdated": "2026-05-13",
@@ -552,13 +555,13 @@
     "secondarySourceUrl": "https://livabletelluride.org/canyonlands-development-a-closer-look-at-telluride-s-financing/",
     "estimatedTotalCost": 35080000,
     "estimatedCostPerUnit": 877000,
-    "costNote": "Estimate \u2014 $3M land + $26M construction loan + $4.7M soft costs (18%) + $1.4M water/sewer tap fee waivers (~35 taps \u00d7 $40K). 40 units / $877,000 per unit."
+    "costNote": "Estimate — $3M land + $26M construction loan + $4.7M soft costs (18%) + $1.4M water/sewer tap fee waivers (~35 taps × $40K). 40 units / $877,000 per unit."
   },
   {
     "id": "shandoka-lot-l",
-    "name": "Shandoka Lot L \u2014 Parking Garage & Affordable Housing",
+    "name": "Shandoka Lot L — Parking Garage & Affordable Housing",
     "shortName": "Shandoka Lot L",
-    "location": "Southwest Telluride \u2014 near Lift 7 / San Miguel River",
+    "location": "Southwest Telluride — near Lift 7 / San Miguel River",
     "communityArea": "Telluride",
     "jurisdiction": "Town of Telluride",
     "projectType": [
@@ -576,7 +579,7 @@
     "parkingSpaces": 900,
     "description": "Redevelopment of 4.07-acre Town-owned Shandoka Lot L into a structured parking garage with ~900 public commuter/skier spaces, ~60 affordable housing units (57,600 SF), ~6,000 SF neighborhood-serving commercial (childcare, food bank, fitness), and a 2,700 SF transit center. Project requires a PUD due to site coverage, height, and floor area variances. High groundwater and San Miguel River proximity are key site constraints. P&Z Work Session filed May 2026 by Design Workshop on behalf of the Town.",
     "keyIssues": [
-      "~900 public parking spaces \u2014 intercept/commuter strategy to reduce town traffic",
+      "~900 public parking spaces — intercept/commuter strategy to reduce town traffic",
       "~60 affordable housing units (57,600 SF); limited free-market units allowed",
       "~6,000 SF neighborhood-serving commercial: childcare, food bank, fitness",
       "PUD required for height, site coverage, and floor area variances",
@@ -591,7 +594,7 @@
     },
     "estimatedTotalCost": null,
     "estimatedCostPerUnit": null,
-    "costNote": "No cost estimate in public documents (May 2026 P&Z worksession). Structured parking at this scale ~$40\u201360M; housing component ~$45\u201355M est. separately.",
+    "costNote": "No cost estimate in public documents (May 2026 P&Z worksession). Structured parking at this scale ~$40–60M; housing component ~$45–55M est. separately.",
     "deedRestricted": true,
     "deedRestrictedPercent": 100,
     "applicant": "Design Workshop (on behalf of Town of Telluride)",

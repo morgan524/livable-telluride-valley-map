@@ -559,40 +559,56 @@ function openDrawer(project) {
       <div class="drawer-meta">${project.projectType.join(' · ')} &nbsp;·&nbsp; ${project.communityArea}</div>
     </div>
     <div class="drawer-body">
-      ${project.estimatedTotalCost ? `
+
+      ${/* ── 1. COST BANNER ── */ project.estimatedTotalCost ? `
         <div class="drawer-section drawer-cost-banner">
           <div class="drawer-label">Estimated Project Cost</div>
           <div style="font-size:1.75rem;font-weight:800;color:#111;line-height:1.1;margin-top:2px">$${(project.estimatedTotalCost/1e6).toFixed(1)}M</div>
           ${project.estimatedCostPerUnit ? `<div style="font-size:0.95rem;font-weight:600;color:#374151;margin-top:3px">$${(project.estimatedCostPerUnit/1000).toFixed(0)}K per unit</div>` : ''}
           ${project.costNote ? `<div style="font-size:0.7rem;color:#9ca3af;margin-top:5px;font-style:italic;line-height:1.4">${project.costNote}</div>` : ''}
         </div>` : ''}
-      ${project.keyQuestion ? `
+
+      ${/* ── 2. BALLOON PAYMENT ALERT ── */ project.balloonPayment ? `
+        <div class="drawer-section drawer-balloon-alert">
+          <div class="drawer-label">⚠ Balloon Payment Due</div>
+          <div style="font-size:1.4rem;font-weight:800;color:#92400e;line-height:1.1;margin-top:2px">$${(project.balloonPayment/1e6).toFixed(0)}M &nbsp;<span style="font-size:0.9rem;font-weight:600">due ${project.balloonDate}</span></div>
+          ${project.balloonNote ? `<div style="font-size:0.7rem;color:#78350f;margin-top:6px;line-height:1.5">${project.balloonNote}</div>` : ''}
+        </div>` : ''}
+
+      ${/* ── 3. KEY QUESTION ── */ project.keyQuestion ? `
         <div class="drawer-section">
           <div class="drawer-label">Key Question</div>
           <p class="drawer-key-question">${project.keyQuestion}</p>
         </div>` : ''}
-      ${project.whyItMatters ? `
+
+      ${/* ── 4. WHY IT MATTERS ── */ project.whyItMatters ? `
         <div class="drawer-section">
           <div class="drawer-label">Why It Matters</div>
           <p>${project.whyItMatters}</p>
         </div>` : ''}
-      ${statsHtml}
+
+      ${/* ── 5. KEY NUMBERS ── */ statsHtml}
+
+      ${/* ── 6. JURISDICTION / DECISION BODY ── */ ''}
       <div class="drawer-section">
         <div class="drawer-label">Jurisdiction</div>
         <p style="margin-bottom:4px">${project.jurisdiction}</p>
         <div class="drawer-label">Decision Body</div>
         <p>${project.decisionBody}</p>
       </div>
-      ${datesHtml}
-      ${upcomingHearingsHtml}
-      ${documentsHtml}
+
+      ${/* ── 7. DATES / COMMENT DEADLINES ── */ datesHtml}
+      ${/* ── 8. UPCOMING HEARINGS ── */ upcomingHearingsHtml}
+      ${/* ── 9. DOCUMENTS ── */ documentsHtml}
+
+      ${/* ── 10. SOURCE CONFIDENCE ── */ ''}
       <div class="drawer-section">
         <div class="drawer-label">Source Confidence</div>
         <div class="confidence-badge ${confClass}">${project.sourceConfidence || 'Unknown'}</div>
-        ${project.costNote ? `<div class="drawer-label" style="margin-top:8px">Cost Note</div><p style="font-size:0.72rem;color:#6b7280">${project.costNote}</p>` : ''}
         <div class="drawer-label" style="margin-top:6px">Editorial Status</div>
         <p style="font-size:0.72rem;color:#6b7280">${project.editorialStatus || 'Needs Review'}</p>
       </div>
+
       <div class="drawer-links">${linksHtml}</div>
       <div class="drawer-footer">Last updated: ${project.lastUpdated}</div>
     </div>

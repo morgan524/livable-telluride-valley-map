@@ -423,6 +423,22 @@ body {
 }
 .drawer-footer { margin-top: 10px; font-size: 0.67rem; color: var(--text-muted); text-align: right; }
 
+/* Cost banner + balloon payment */
+.drawer-cost-banner {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px 14px !important;
+  margin-bottom: 10px !important;
+}
+.drawer-balloon-alert {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 12px 14px !important;
+  margin-bottom: 10px !important;
+}
+
 /* 3D MASSING TOGGLE */
 #massing-toggle-bar {
   position: absolute;
