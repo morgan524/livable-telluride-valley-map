@@ -35,6 +35,9 @@ const MASSING_COLORS = {
   'Disputed':             '#6b4f87',
 };
 
+// ─── Inline massing GeoJSON (avoids async file-load race) ────────────────────
+const MASSING_GEOJSON = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":"society-turn-pud-massing","project_id":"society-turn-pud","name":"Society Turn PUD","status":"Under Review","project_type":"Medical / Commercial / Hotel","height_ft":72,"height_m":21.95,"base_m":0,"floors":5,"sqft":400000,"hotel_rooms":125,"housing_units":null,"source_confidence":"Estimated","source_note":"Approximate block massing based on 400,000 sq ft PUD application summary and site area.","deep_dive_url":"https://livabletelluride.org/societyturnpud/","primary_source_url":"","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8744,37.9489],[-107.8684,37.9489],[-107.8684,37.9517],[-107.8744,37.9517],[-107.8744,37.9489]]]}},{"type":"Feature","properties":{"id":"four-seasons-mv-massing","project_id":"four-seasons-mountain-village","name":"Four Seasons Resort & Residences Telluride","status":"Approved","project_type":"Hotel / Lodging","height_ft":85,"height_m":25.91,"base_m":0,"floors":7,"sqft":350000,"hotel_rooms":52,"housing_units":10,"source_confidence":"Estimated","source_note":"Approximate massing derived from 4.4-acre site area and public application materials.","deep_dive_url":"https://livabletelluride.org/","primary_source_url":"https://coloradosun.com/2026/04/07/housing-four-seasons-mountain-village/","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8462,37.9372],[-107.8440,37.9372],[-107.8440,37.9384],[-107.8462,37.9384],[-107.8462,37.9372]]]}},{"type":"Feature","properties":{"id":"six-senses-mv-massing","project_id":"six-senses-mountain-village","name":"Six Senses Telluride","status":"Approved","project_type":"Hotel / Lodging","height_ft":72,"height_m":21.95,"base_m":0,"floors":6,"sqft":180000,"hotel_rooms":77,"housing_units":56,"source_confidence":"Estimated","source_note":"Approximate massing based on 77-room hotel + 24 residences + 56-unit employee housing complex.","deep_dive_url":"https://livabletelluride.org/","primary_source_url":"https://www.telluridenews.com/","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8489,37.9329],[-107.8471,37.9329],[-107.8471,37.9341],[-107.8489,37.9341],[-107.8489,37.9329]]]}},{"type":"Feature","properties":{"id":"voodoo-housing-massing","project_id":"voodoo-affordable-housing","name":"VooDoo Affordable Housing","status":"Approved","project_type":"Housing","height_ft":45,"height_m":13.72,"base_m":0,"floors":4,"sqft":85000,"hotel_rooms":null,"housing_units":27,"source_confidence":"Estimated","source_note":"Approximate block massing based on 27-unit affordable housing project.","deep_dive_url":"https://livabletelluride.org/the-voodoo-project/","primary_source_url":"","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8123,37.9379],[-107.8103,37.9379],[-107.8103,37.9391],[-107.8123,37.9391],[-107.8123,37.9379]]]}},{"type":"Feature","properties":{"id":"chair-7-massing","project_id":"chair-7-open-space","name":"Chair 7 Redevelopment Area","status":"Proposed","project_type":"Open Space / Hotel / Land Use","height_ft":60,"height_m":18.29,"base_m":0,"floors":5,"sqft":120000,"hotel_rooms":80,"housing_units":null,"source_confidence":"Unknown","source_note":"Placeholder massing only. Chair 7 redevelopment concept has been discussed publicly but no formal application has been filed.","deep_dive_url":"https://livabletelluride.org/the-chair-7-development-controversy/","primary_source_url":"","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8630,37.9274],[-107.8610,37.9274],[-107.8610,37.9286],[-107.8630,37.9286],[-107.8630,37.9274]]]}},{"type":"Feature","properties":{"id":"carhenge-block-a-massing","project_id":"carhenge-lot","name":"Carhenge Lot — Residential Block (South)","status":"Under Review","project_type":"Housing / Mixed-Use","height_ft":48,"height_m":14.6,"base_m":0,"floors":4,"sqft":null,"hotel_rooms":null,"housing_units":null,"source_confidence":"Unknown","source_note":"Schematic massing only — derived from May 2026 HARC Work Session concept drawings.","deep_dive_url":"https://engagetelluride.org/carhenge-lot-redevelopment-project","primary_source_url":"https://engagetelluride.org/32089/widgets/113355/documents/80980","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8199,37.9366],[-107.8189,37.9366],[-107.8189,37.9370],[-107.8199,37.9370],[-107.8199,37.9366]]]}},{"type":"Feature","properties":{"id":"carhenge-block-b-massing","project_id":"carhenge-lot","name":"Carhenge Lot — Commercial / Community Block (North)","status":"Under Review","project_type":"Housing / Mixed-Use","height_ft":36,"height_m":11.0,"base_m":0,"floors":3,"sqft":null,"hotel_rooms":null,"housing_units":null,"source_confidence":"Unknown","source_note":"Schematic massing only — derived from May 2026 HARC Work Session concept drawings.","deep_dive_url":"https://engagetelluride.org/carhenge-lot-redevelopment-project","primary_source_url":"https://engagetelluride.org/32089/widgets/113355/documents/80980","last_updated":"2026-05-13"},"geometry":{"type":"Polygon","coordinates":[[[-107.8199,37.9372],[-107.8189,37.9372],[-107.8189,37.9375],[-107.8199,37.9375],[-107.8199,37.9372]]]}}]};
+
 // ─── State ────────────────────────────────────────────────────────────────────
 let allProjects      = [];
 let filteredProjects = [];
@@ -95,13 +98,15 @@ async function init() {
 
 // ─── 3D Massing layer ─────────────────────────────────────────────────────────
 function loadMassingLayer() {
-  // Add GeoJSON source
+  // Add GeoJSON source — inlined to avoid async file-load race
   map.addSource('proposed-massing', {
     type: 'geojson',
-    data: 'data/proposed-massing.geojson',
+    data: MASSING_GEOJSON,
   });
 
   // Add fill-extrusion layer (hidden by default)
+  // Heights are multiplied 10× so blocks are visible at overview zoom levels;
+  // they become correctly-proportioned when zoomed in to street level.
   map.addLayer({
     id: 'proposed-massing-layer',
     type: 'fill-extrusion',
@@ -120,15 +125,9 @@ function loadMassingLayer() {
         'Disputed',              '#6b4f87',
         '#888888',
       ],
-      'fill-extrusion-height': ['get', 'height_m'],
-      'fill-extrusion-base':   ['coalesce', ['get', 'base_m'], 0],
-      'fill-extrusion-opacity': [
-        'case',
-        ['==', ['get', 'source_confidence'], 'Confirmed'], 0.82,
-        ['==', ['get', 'source_confidence'], 'Estimated'], 0.62,
-        ['==', ['get', 'source_confidence'], 'Disputed'],  0.42,
-        0.50,
-      ],
+      'fill-extrusion-height': ['*', ['coalesce', ['get', 'height_m'], 20], 10],
+      'fill-extrusion-base':   0,
+      'fill-extrusion-opacity': 0.75,
       'fill-extrusion-vertical-gradient': true,
     },
   });
@@ -162,10 +161,12 @@ function loadMassingLayer() {
     toggle.addEventListener('change', e => {
       const visible = e.target.checked;
       map.setLayoutProperty('proposed-massing-layer', 'visibility', visible ? 'visible' : 'none');
+      // When enabling, fly to the main Telluride–MV corridor zoomed in enough to see blocks
       map.easeTo({
+        ...(visible ? { center: [-107.843, 37.938], zoom: 13.5 } : {}),
         pitch:    visible ? 58 : 0,
         bearing:  visible ? -20 : 0,
-        duration: visible ? 900 : 700,
+        duration: visible ? 1100 : 700,
       });
 
       // Show/hide disclaimer
@@ -432,8 +433,8 @@ function openDrawer(project) {
   // Fly to location and show 3D massing for this project
   map.easeTo({
     center:   [project.longitude, project.latitude],
-    zoom:     16,
-    pitch:    58,
+    zoom:     17,
+    pitch:    60,
     bearing:  -22,
     duration: 1200,
   });
