@@ -345,7 +345,6 @@ function applyFilters() {
 
   renderProjectList();
   renderMarkers();
-  updateCounter();
   updateMassingFilter();
 }
 
@@ -390,10 +389,7 @@ function renderProjectList() {
 
     item.appendChild(dot);
     item.appendChild(text);
-    item.addEventListener('click', () => {
-      openDrawer(p);
-      map.flyTo({ center: [p.longitude, p.latitude], zoom: Math.max(map.getZoom(), 12), speed: 0.8 });
-    });
+    item.addEventListener('click', () => openDrawer(p));
     list.appendChild(item);
   });
 }
@@ -423,30 +419,6 @@ function renderMarkers() {
   });
 }
 
-// ─── Cumulative counter ───────────────────────────────────────────────────────
-function updateCounter() {
-  let sqft = 0, hotelRooms = 0, housingUnits = 0, employees = 0, debt = 0, hearings = 0;
-  const now = new Date();
-
-  filteredProjects.forEach(p => {
-    if (p.squareFootage)     sqft       += p.squareFootage;
-    if (p.hotelRooms)        hotelRooms += p.hotelRooms;
-    if (p.housingUnits)      housingUnits += p.housingUnits;
-    if (p.estimatedEmployees) employees += p.estimatedEmployees;
-    if (p.publicDebtSubsidy) debt       += p.publicDebtSubsidy;
-    if (p.nextMeetingDate && new Date(p.nextMeetingDate) >= now) hearings++;
-  });
-
-  document.getElementById('counter-projects').textContent  = filteredProjects.length;
-  document.getElementById('counter-sqft').textContent      = sqft       ? `${(sqft/1000).toFixed(0)}K sf` : '—';
-  document.getElementById('counter-hotels').textContent    = hotelRooms ? hotelRooms : '—';
-  document.getElementById('counter-housing').textContent   = housingUnits ? housingUnits : '—';
-  document.getElementById('counter-employees').textContent = employees  ? employees.toLocaleString() : '—';
-  document.getElementById('counter-debt').textContent      = debt       ? `$${(debt/1e6).toFixed(0)}M` : '—';
-  document.getElementById('counter-hearings').textContent  = hearings   ? hearings : '—';
-  document.getElementById('counter-debt2').textContent     = debt       ? `$${(debt/1e6).toFixed(0)}M` : '—';
-}
-
 // ─── Drawer ───────────────────────────────────────────────────────────────────
 function openDrawer(project) {
   activeProject = project;
@@ -456,6 +428,25 @@ function openDrawer(project) {
   markers.forEach(({ el, project: p }) => {
     el.classList.toggle('active-marker', p.id === project.id);
   });
+
+  // Fly to location and show 3D massing for this project
+  map.easeTo({
+    center:   [project.longitude, project.latitude],
+    zoom:     14.5,
+    pitch:    58,
+    bearing:  -22,
+    duration: 1100,
+  });
+  if (massingLoaded) {
+    map.setLayoutProperty('proposed-massing-layer', 'visibility', 'visible');
+    map.setFilter('proposed-massing-layer', ['==', ['get', 'project_id'], project.id]);
+    const toggle = document.getElementById('toggleMassing');
+    if (toggle) toggle.checked = true;
+    const disclaimer = document.getElementById('massing-disclaimer');
+    if (disclaimer) disclaimer.style.display = 'block';
+    const massingLegend = document.getElementById('massing-legend-section');
+    if (massingLegend) massingLegend.style.display = 'block';
+  }
 
   const drawer = document.getElementById('drawer');
 
@@ -569,6 +560,19 @@ function closeDrawer() {
   document.getElementById('drawer').classList.remove('open');
   markers.forEach(({ el }) => el.classList.remove('active-marker'));
   renderProjectList();
+
+  // Return to flat view, hide massing, restore full filter
+  map.easeTo({ pitch: 0, bearing: 0, duration: 700 });
+  if (massingLoaded) {
+    map.setLayoutProperty('proposed-massing-layer', 'visibility', 'none');
+    map.setFilter('proposed-massing-layer', null);
+    const toggle = document.getElementById('toggleMassing');
+    if (toggle) toggle.checked = false;
+    const disclaimer = document.getElementById('massing-disclaimer');
+    if (disclaimer) disclaimer.style.display = 'none';
+    const massingLegend = document.getElementById('massing-legend-section');
+    if (massingLegend) massingLegend.style.display = 'none';
+  }
 }
 
 // Expose for inline handlers
