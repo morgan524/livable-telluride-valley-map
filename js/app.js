@@ -76,7 +76,6 @@ async function init() {
   }
 
   buildFilterUI();
-  buildLegend();
   applyFilters();
 
   // Search
@@ -210,8 +209,6 @@ function loadMassingLayer() {
       if (disclaimer) disclaimer.style.display = visible ? 'block' : 'none';
 
       // Update massing legend visibility
-      const massingLegend = document.getElementById('massing-legend-section');
-      if (massingLegend) massingLegend.style.display = visible ? 'block' : 'none';
     });
   }
 }
@@ -312,42 +309,6 @@ function renderChips(containerId, values, filterKey) {
 }
 
 // ─── Legend ───────────────────────────────────────────────────────────────────
-function buildLegend() {
-  const container = document.getElementById('legend-items');
-  const entries = [
-    ['Proposed',              STATUS_COLORS['Proposed'],             ''],
-    ['Under Review',          STATUS_COLORS['Under Review'],         ''],
-    ['Approved',              STATUS_COLORS['Approved'],             ''],
-    ['In Litigation',         STATUS_COLORS['In Litigation'],        ''],
-    ['Public Infrastructure', STATUS_COLORS['Public Infrastructure'],''],
-    ['Built / Historical',    STATUS_COLORS['Built'],                ''],
-  ];
-  entries.forEach(([label, color]) => {
-    const item = document.createElement('div');
-    item.className = 'legend-item';
-    item.innerHTML = `<div class="legend-dot" style="background:${color}"></div><span>${label}</span>`;
-    container.appendChild(item);
-  });
-
-  // Massing legend (hidden until toggle is on)
-  const massingSection = document.getElementById('massing-legend-section');
-  if (massingSection) {
-    const massingEntries = [
-      ['Proposed / Under Review', '#d95f02'],
-      ['Approved (not yet built)', '#2f7a5f'],
-      ['Public / Civic',          '#376980'],
-      ['Disputed',                '#6b4f87'],
-    ];
-    massingEntries.forEach(([label, color]) => {
-      const item = document.createElement('div');
-      item.className = 'legend-item';
-      item.innerHTML = `<div class="legend-block" style="background:${color}"></div><span>${label}</span>`;
-      massingSection.appendChild(item);
-    });
-  }
-}
-
-// ─── Filter & render ─────────────────────────────────────────────────────────
 function applyFilters() {
   filteredProjects = allProjects.filter(p => {
     if (activeFilters.search) {
@@ -469,8 +430,6 @@ function openDrawer(project) {
     if (toggle) toggle.checked = true;
     const disclaimer = document.getElementById('massing-disclaimer');
     if (disclaimer) disclaimer.style.display = 'block';
-    const massingLegend = document.getElementById('massing-legend-section');
-    if (massingLegend) massingLegend.style.display = 'block';
   }
 
   const drawer = document.getElementById('drawer');
@@ -647,8 +606,6 @@ function closeDrawer() {
     if (toggle) toggle.checked = false;
     const disclaimer = document.getElementById('massing-disclaimer');
     if (disclaimer) disclaimer.style.display = 'none';
-    const massingLegend = document.getElementById('massing-legend-section');
-    if (massingLegend) massingLegend.style.display = 'none';
   }
 }
 
